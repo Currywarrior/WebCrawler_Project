@@ -47,6 +47,11 @@ SITE_MAIN = {
     "pixnet.net": "#article-content-inner, .article-content-inner, .article-content",
     "travel.tycg.gov.tw": "main",
     "ezgo.ardswc.gov.tw": "main, .content",
+    "news.pts.org.tw": ".post-article",
+}
+# 封面照片放在正文容器外面的網站，擷取時補回正文開頭
+SITE_COVER = {
+    "udn.com": ".article-content__cover",
 }
 GENERIC_MAIN = ["[itemprop=articleBody]", "article .entry-content", ".entry-content",
                 ".post-content", ".article-content", ".article-body", "article", "main",
@@ -105,6 +110,10 @@ def meta(soup, url):
     if not soup.find("meta", attrs={"property": "og:title"}) and h1 and len(h1.get_text(strip=True)) > 3:
         info["h1"] = h1.get_text(" ", strip=True)
     info["title"] = re.split(r"\s+[-|｜–]\s+(維基百科|桃園觀光導覽網|美食人生)", info["title"])[0]
+    # 尾巴就是網站名稱的也切掉，新聞網站常在站名前多一段版別（例如「 - 桃園市 - 自由時報電子報」）
+    if info["source_name"]:
+        info["title"] = re.split(r"(?:\s+-\s+[^\s-]{1,6})?\s+[-|｜–]\s+" + re.escape(info["source_name"]) + r"\s*$",
+                                 info["title"])[0]
     if not info["source_name"]:
         info["source_name"] = urlparse(url).netloc
     return info
@@ -176,7 +185,11 @@ def clean(soup):
             continue
         if el.name in ("html", "body", "main", "article"):
             continue
-        if _tokens(el) & NOISE_WORDS:
+        noise = _tokens(el) & NOISE_WORDS
+        # 圖片燈箱（例如自由時報的 image-popup）不是彈出視窗
+        if noise == {"popup"} and _tokens(el) & {"image", "img", "photo"}:
+            continue
+        if noise:
             # 保護：佔全頁段落文字 40% 以上的區塊不會是雜訊（例如 class="has-sidebar" 的外層）
             if _ptext_len(el) / total < 0.4:
                 el.decompose()
@@ -191,7 +204,9 @@ def find_main(soup, url):
         if host.endswith(site):
             for s in sel.split(","):
                 el = soup.select_one(s.strip())
-                if el and _ptext_len(el) > 150:
+                # 公視這類正文不用 <p>、只用 <br> 換行的網站，改算整塊字數
+                if el and (_ptext_len(el) > 150 or
+                           not el.find(["p", "li", "td"]) and len(el.get_text(strip=True)) > 150):
                     return el, f"站點規則 {s.strip()}"
     for sel in GENERIC_MAIN:
         el = soup.select_one(sel)
@@ -359,6 +374,11 @@ def parse(html, url):
     _fix_lazy(soup, url)
     clean(soup)
     main, how = find_main(soup, url)
+    host = urlparse(url).netloc
+    for site, sel in SITE_COVER.items():
+        cover = soup.select_one(sel) if host.endswith(site) else None
+        if cover is not None and main not in cover.parents and cover not in main.descendants:
+            main.insert(0, cover.extract())
     page_links = links(all_links_soup, url, None)
     in_main = {urljoin(url, a["href"]).split("#")[0] for a in main.find_all("a", href=True)}
     for l in page_links:

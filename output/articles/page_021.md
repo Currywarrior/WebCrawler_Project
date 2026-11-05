@@ -1,10 +1,10 @@
-# 超過２萬朵「純白百合花海」50元拍爆！順遊日系樹林隧道、超低調麵包工廠 | 食尚玩家
+# 超過２萬朵「純白百合花海」50元拍爆！順遊日系樹林隧道、超低調麵包工廠
 
 - 原始網址：https://supertaste.tvbs.com.tw/travel/348994
 - 網站名稱：食尚玩家
 - 作者：食尚玩家
 - 發表日期：2024-05-02T11:00:00+08:00
-- 爬取時間：2026-10-29T16:06:39+08:00　取得方式：requests　正文定位：站點規則 article
+- 爬取時間：2026-11-05T15:17:58+08:00　取得方式：requests　正文定位：站點規則 article
 - 圖片：13 張
 
 ---
@@ -20,21 +20,21 @@
 
 ### 本週優惠券，領起來
 
-![品冠旅遊](../images/page_021_image_02.jpg)
+![愛童學會](../images/page_021_image_02.jpg)
 
-*圖：品冠旅遊｜來源：https://supertaste-images.tvbs.com.tw/api/v1/images/01a1592ffb7a73eb98100c10b620ed61.jpg?w=1200&q=75*
+*圖：愛童學會｜來源：https://supertaste-images.tvbs.com.tw/api/v1/images/01a18761226e704db8a05cd78dfc613b.png?w=1200&q=75*
 
-玩日韓每人折千元
+AI童書85折
 
-品冠旅遊
+愛童學會
 
-![冰茶專賣店Iced Tea Shop](../images/page_021_image_03.jpg)
+![璦勒芬莊園民宿](../images/page_021_image_03.jpg)
 
-*圖：冰茶專賣店Iced Tea Shop｜來源：https://supertaste-images.tvbs.com.tw/api/v1/images/01a0f83b1a3370d3bd6b71d627fcc7b8.jpg?w=1200&q=75*
+*圖：璦勒芬莊園民宿｜來源：https://supertaste-images.tvbs.com.tw/api/v1/legacy/img/program/upload/2026/02/25/20260225185214-2a686613.png?w=1200&q=75*
 
-長島冰茶買一送一
+住宿85折
 
-冰茶專賣店Iced Tea Shop
+璦勒芬莊園民宿
 
 - 1 白千層鐵砲百合花園｜景點位置、費用
 - 2 白千層鐵砲百合花園｜今年花況

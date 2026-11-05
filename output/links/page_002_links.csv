@@ -17,12 +17,14 @@ https://travel.tycg.gov.tw/dalongmen/,大龍門主題網,False,False
 https://travel.tycg.gov.tw/zh-tw/travel/tourlist,行程快搜,False,False
 https://travel.tycg.gov.tw/zh-tw/travel/start-itinerary-in-taoyuan,遊臺灣從桃園開始,False,False
 https://travel.tycg.gov.tw/zh-tw/travel/travel-guide,旅遊懶人包,False,False
+https://travel.tycg.gov.tw/lalashan-dark-sky/,北橫觀星指南,False,False
 https://travel.tycg.gov.tw/zh-tw/travel/get-around-by-airport-mrt,搭機捷遊桃園,False,False
 https://travel.tycg.gov.tw/zh-tw/travel/temple-blessing-tour,宮廟祈福之旅,False,False
 https://travel.tycg.gov.tw/zh-tw/travel/child-venue,親子放電場館,False,False
 https://travel.tycg.gov.tw/zh-tw/travel/factory-tours,體驗觀光工廠,False,False
 https://travel.tycg.gov.tw/zh-tw/travel/flower-viewing,四季賞花情報,False,False
 https://travel.tycg.gov.tw/zh-tw/travel/new-traveler,初次造訪桃園,False,False
+https://travel.tycg.gov.tw/zh-tw/travel/dalongmentrail,大龍門古道,False,False
 https://travel.tycg.gov.tw/zh-tw/travel/trail,步道漫遊趣,False,False
 https://travel.tycg.gov.tw/zh-tw/travel/bicycle,單車旅行,False,False
 https://travel.tycg.gov.tw/zh-tw/travel/parent-child-park,特色公園遊,False,False
@@ -88,18 +90,18 @@ https://travel.tycg.gov.tw/zh-tw/search,全文檢索,False,False
 https://www.facebook.com/sharer/sharer.php?u=https://travel.tycg.gov.tw/zh-tw/travel/district/50,分享到 facebook,False,False
 http://service.weibo.com/share/share.php?url=https://travel.tycg.gov.tw/zh-tw/travel/district/50&amp;title=觀音&amp;language=zh-tw,分享到 Weibo,False,True
 http://line.naver.jp/R/msg/text/?觀音%20https://travel.tycg.gov.tw/zh-tw/travel/district/50,分享到 line,False,True
-https://travel.tycg.gov.tw/zh-tw/travel/attraction/483,3.9 蓮荷園休閒農場 星期四：09:00 - 17:00 人氣 250281,True,False
-https://travel.tycg.gov.tw/zh-tw/travel/attraction/1178,4.0 青林農場 星期四：09:30 – 17:00 人氣 183996,True,False
+https://travel.tycg.gov.tw/zh-tw/travel/attraction/483,3.9 蓮荷園休閒農場 星期四：09:00 - 17:00 人氣 250730,True,False
+https://travel.tycg.gov.tw/zh-tw/travel/attraction/1178,4.0 青林農場 星期四：09:30 – 17:00 人氣 184416,True,False
 https://travel.tycg.gov.tw/zh-tw/travel/attraction/276,"白沙岬燈塔 夏令時間(4月~10月)：09:00~18:00、冬令時間(11月~隔年3月)：09:00~17:00
 週一公休，遇國定假日或連續假期則調整為收假",True,True
 https://travel.tycg.gov.tw/zh-tw/travel?zipcode=328,看更多景點,True,False
-https://travel.tycg.gov.tw/zh-tw/travel/tour/5,漁港風光一日遊 旅遊天數：一日遊 旅遊季節：四季皆宜 行程類型：生態環境、歷史巡禮、背包客 發佈人：觀光旅遊局 人氣 7488,True,False
-https://travel.tycg.gov.tw/zh-tw/travel/tour/10,穿越濱海線 竹圍嚐鱻鐵馬樂 旅遊天數：一日遊 旅遊季節：四季皆宜 行程類型：達人帶路 發佈人：觀光旅遊局 人氣 7564,True,False
-https://travel.tycg.gov.tw/zh-tw/travel/tour/27,暢遊海線․濱海公車自由行 旅遊天數：一日遊 旅遊季節：四季皆宜 行程類型：其他 發佈人：觀光旅遊局 人氣 9492,True,False
-https://travel.tycg.gov.tw/zh-tw/travel/tour/72,蔚藍海岸線的浪漫之旅 旅遊天數：一日遊 旅遊季節：四季皆宜 行程類型：生態環境、歷史巡禮、背包客 人氣 3432,True,False
-https://travel.tycg.gov.tw/zh-tw/travel/district/49,大園 大園區位於桃園市北側的海岸，桃園國際機場便位於此處，且有機場捷運行經，交通便捷。您可往海岸區域，漫步沙丘與許厝港溼地，近距離接觸地質奇景與紅樹林生態。此外,True,True
-https://travel.tycg.gov.tw/zh-tw/travel/district/22,楊梅 楊梅區位於桃園市西側，緊鄰中壢區，距離中壢市中心約30分鐘車程。區域內丘陵與埤塘遍布，遊客可在視野極佳的步道健行，欣賞層層疊疊的茶園梯田，品嘗茶味濃厚的「,True,False
-https://travel.tycg.gov.tw/zh-tw/travel/district/26,大溪 大溪區保有桃園郊區的自然美景及人文歷史，但距離市中心不遠，且設有公車總站，遊客可以輕易地由各交通樞紐搭乘公車，抵達此處。遊客不妨先造訪此區最知名的大溪老街,True,False
+https://travel.tycg.gov.tw/zh-tw/travel/tour/27,暢遊海線․濱海公車自由行 旅遊天數：一日遊 旅遊季節：四季皆宜 行程類型：其他 發佈人：觀光旅遊局 人氣 9511,True,False
+https://travel.tycg.gov.tw/zh-tw/travel/tour/10,穿越濱海線 竹圍嚐鱻鐵馬樂 旅遊天數：一日遊 旅遊季節：四季皆宜 行程類型：達人帶路 發佈人：觀光旅遊局 人氣 7587,True,False
+https://travel.tycg.gov.tw/zh-tw/travel/tour/5,漁港風光一日遊 旅遊天數：一日遊 旅遊季節：四季皆宜 行程類型：生態環境、歷史巡禮、背包客 發佈人：觀光旅遊局 人氣 7508,True,False
+https://travel.tycg.gov.tw/zh-tw/travel/tour/72,蔚藍海岸線的浪漫之旅 旅遊天數：一日遊 旅遊季節：四季皆宜 行程類型：生態環境、歷史巡禮、背包客 人氣 3456,True,False
+https://travel.tycg.gov.tw/zh-tw/travel/district/1,桃園 桃園區是桃園市的市中心，遊客可在這裡體會都會生活的熱鬧氣氛與活力。商圈內總是人潮不斷，從百貨公司到藥妝店，3C產品到異國美食，任何生活所需都能在這裡滿足。,True,False
+https://travel.tycg.gov.tw/zh-tw/travel/district/2,復興 復興區位於桃園市東南，沿臺7線公路深入東眼山、拉拉山及雪山山脈，走過雲霧繚繞的森林步道，仰望挺拔參天的千年巨木，吸吐乾淨清新的山間氣息。每年春冬兩季，櫻花,True,False
+https://travel.tycg.gov.tw/zh-tw/travel/district/9,中壢 中壢區內有桃園機場捷運行經，串聯桃園高鐵站、體育園區以及中壢市區，可單日來回臺灣各主要城市，交通便利。走出桃園高鐵站，周圍環繞的是各知名品牌的大型商場及精,True,False
 https://www.facebook.com/traveltaoyuan,樂遊桃園,False,False
 https://www.instagram.com/taoyuantravel/,Instagram,False,False
 https://www.facebook.com/gototaoyuan/,桃園風景區管理處,False,False
