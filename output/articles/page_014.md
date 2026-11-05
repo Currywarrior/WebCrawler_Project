@@ -4,7 +4,7 @@
 - 網站名稱：我的旅圖中 during my journey
 - 作者：安妮卡Ainycka
 - 發表日期：2025-04-04T20:32:47+08:00
-- 爬取時間：2026-11-05T15:17:40+08:00　取得方式：requests　正文定位：通用規則 article .entry-content
+- 爬取時間：2026-11-05T16:35:11+08:00　取得方式：requests　正文定位：通用規則 article .entry-content
 - 圖片：15 張
 
 ---

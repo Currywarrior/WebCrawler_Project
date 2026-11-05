@@ -1,10 +1,10 @@
 # 來來牛家莊-客庄小旅行
 
 - 原始網址：https://romantichakka.com/explore/HaFood?a=1955&id=3209
-- 網站名稱：romantichakka.com
+- 網站名稱：romantichakka.hakka.gov.tw
 - 作者：（未標示）
 - 發表日期：（未標示）
-- 爬取時間：2026-10-29T16:05:29+08:00　取得方式：requests　正文定位：通用規則 main
+- 爬取時間：2026-11-05T16:35:31+08:00　取得方式：requests　正文定位：通用規則 main
 - 圖片：12 張
 
 ---
@@ -12,7 +12,7 @@
 
 ![來來牛家莊](../images/page_017_image_01.jpg)
 
-*圖：來來牛家莊｜來源：https://romantichakka.com/fapi/ArtPic?id=9287&w=1000*
+*圖：來來牛家莊｜來源：https://romantichakka.hakka.gov.tw/fapi/ArtPic?id=9287&w=1000*
 
 店家電話 :
 
@@ -29,16 +29,16 @@
 已有30年歷史的來來牛家莊位於觀音工業區附近，是不少上班族午晚餐的首選。店內主打清燉牛肉麵，湯頭清澈爽口，牛肋條軟嫩適中，入口不見腥羶味，深受顧客喜愛。除牛肉麵外，也供應牛肉湯、油蔥乾麵與幾款滷味小菜，簡單卻道地。寬版麵條帶勁不軟爛，與湯頭相得益彰。用餐時段總是人潮絡繹，樸實環境與實在價格成為在地人推薦的原因。若想吃一碗實在的牛肉麵，來來牛家莊是值得一試的地方。
 
 - 桃園市 觀音區
-- 4.3 ★ (323)
+- 4.3 ★ (324)
 
 - 桃園市 觀音區
 - 4.2 ★ (59)
 
 - 桃園市 觀音區
-- 4.3 ★ (1497)
+- 4.3 ★ (1501)
 
 - 桃園市 觀音區
-- 4 ★ (161)
+- 4 ★ (162)
 
 - 桃園市 觀音區
 - 4.6 ★ (28)
@@ -47,10 +47,10 @@
 - 3.9 ★ (2529)
 
 - 桃園市 觀音區
-- 4.3 ★ (811)
+- 4.3 ★ (813)
 
 - 桃園市 觀音區
-- 4.5 ★ (395)
+- 4.5 ★ (397)
 
 - 桃園市 觀音區
 - 4 ★ (7832)
@@ -61,7 +61,7 @@
 - 4.7 ★ (1432)
 
 - 桃園市 觀音區
-- 4.4 ★ (275)
+- 4.4 ★ (274)
 
 - 桃園市 觀音區
 - 4.7 ★ (212)
@@ -70,16 +70,16 @@
 - 4.2 ★ (99)
 
 - 桃園市 觀音區
-- 4.6 ★ (1713)
+- 4.6 ★ (1729)
 
 - 桃園市 觀音區
-- 4.2 ★ (6395)
+- 4.2 ★ (6401)
 
 - 桃園市 觀音區
-- 4.4 ★ (1146)
+- 4.4 ★ (1153)
 
 - 桃園市 觀音區
-- 4.3 ★ (179)
+- 4.3 ★ (181)
 
 - 桃園市 觀音區
 - 4.8 ★ (16)
@@ -88,60 +88,60 @@
 - 3.9 ★ (2529)
 
 - 桃園市 觀音區
-- 4 ★ (1908)
+- 4 ★ (1910)
 
 - 桃園市 觀音區
 - 2.6 ★ (8)
 
 - 桃園市 觀音區
-- 4.2 ★ (905)
+- 4.2 ★ (906)
 
 - 桃園市 觀音區
 - 4 ★ (1783)
 
 ![（原文無圖片說明）](../images/page_017_image_02.jpg)
 
-*圖：（原文無圖片說明）｜來源：https://taiwan.taiwanstay.net.tw/twpic/336897.jpg?v=20261028*
+*圖：（原文無圖片說明）｜來源：https://taiwan.taiwanstay.net.tw/twpic/336897.jpg?v=20261104*
 
 ![（原文無圖片說明）](../images/page_017_image_03.jpg)
 
-*圖：（原文無圖片說明）｜來源：https://taiwan.taiwanstay.net.tw/twpic/152553.png?v=20261028*
+*圖：（原文無圖片說明）｜來源：https://taiwan.taiwanstay.net.tw/twpic/152553.png?v=20261104*
 
 ![（原文無圖片說明）](../images/page_017_image_04.jpg)
 
-*圖：（原文無圖片說明）｜來源：https://taiwan.taiwanstay.net.tw/twpic/11701.jpg?v=20261028*
+*圖：（原文無圖片說明）｜來源：https://taiwan.taiwanstay.net.tw/twpic/11701.jpg?v=20261104*
 
 ![（原文無圖片說明）](../images/page_017_image_05.jpg)
 
-*圖：（原文無圖片說明）｜來源：https://romantichakka.com/assets/images/default.jpg*
+*圖：（原文無圖片說明）｜來源：https://romantichakka.hakka.gov.tw/assets/images/default.jpg*
 
 ![（原文無圖片說明）](../images/page_017_image_06.jpg)
 
-*圖：（原文無圖片說明）｜來源：https://taiwan.taiwanstay.net.tw/twpic/295167.jpg?v=20261028*
+*圖：（原文無圖片說明）｜來源：https://taiwan.taiwanstay.net.tw/twpic/295167.jpg?v=20261104*
 
 ![（原文無圖片說明）](../images/page_017_image_07.jpg)
 
-*圖：（原文無圖片說明）｜來源：https://taiwan.taiwanstay.net.tw/twpic/314658.png?v=20261028*
+*圖：（原文無圖片說明）｜來源：https://taiwan.taiwanstay.net.tw/twpic/314658.png?v=20261104*
 
 ![（原文無圖片說明）](../images/page_017_image_08.jpg)
 
-*圖：（原文無圖片說明）｜來源：https://taiwan.taiwanstay.net.tw/twpic/110773.jpg?v=20261028*
+*圖：（原文無圖片說明）｜來源：https://taiwan.taiwanstay.net.tw/twpic/110773.jpg?v=20261104*
 
 ![（原文無圖片說明）](../images/page_017_image_09.jpg)
 
-*圖：（原文無圖片說明）｜來源：https://taiwan.taiwanstay.net.tw/twpic/325089.png?v=20261028*
+*圖：（原文無圖片說明）｜來源：https://taiwan.taiwanstay.net.tw/twpic/325089.png?v=20261104*
 
 ![（原文無圖片說明）](../images/page_017_image_10.jpg)
 
-*圖：（原文無圖片說明）｜來源：https://taiwan.taiwanstay.net.tw/twpic/110393.jpg?v=20261028*
+*圖：（原文無圖片說明）｜來源：https://taiwan.taiwanstay.net.tw/twpic/110393.jpg?v=20261104*
 
 ![（原文無圖片說明）](../images/page_017_image_11.jpg)
 
-*圖：（原文無圖片說明）｜來源：https://taiwan.taiwanstay.net.tw/twpic/110538.jpg?v=20261028*
+*圖：（原文無圖片說明）｜來源：https://taiwan.taiwanstay.net.tw/twpic/110538.jpg?v=20261104*
 
 ![（原文無圖片說明）](../images/page_017_image_12.jpg)
 
-*圖：（原文無圖片說明）｜來源：https://taiwan.taiwanstay.net.tw/twpic/103065.jpg?v=20261028*
+*圖：（原文無圖片說明）｜來源：https://taiwan.taiwanstay.net.tw/twpic/103065.jpg?v=20261104*
 
 - 0800-038838
 

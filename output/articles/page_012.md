@@ -4,7 +4,7 @@
 - 網站名稱：桃園觀光導覽網
 - 作者：桃園觀光導覽網
 - 發表日期：2025-06-02T14:11:51+08:00
-- 爬取時間：2026-10-29T16:04:21+08:00　取得方式：playwright　正文定位：站點規則 main
+- 爬取時間：2026-11-05T16:34:33+08:00　取得方式：playwright　正文定位：站點規則 main
 - 圖片：7 張
 
 ---
@@ -59,7 +59,7 @@
 
 ![（原文無圖片說明）](../images/page_012_image_04.jpg)
 
-*圖：（原文無圖片說明）｜來源：https://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i15!2i27409!3i14031!4i256!2m3!1e0!2sm!3i801567380!2m6!1e2!2straffic!4m2!1st!2s2988768!5i1!3m13!2szh-TW!3sUS!5e18!12m5!1e68!2m2!1sset!2sRoadmap!4e2!12m3!1e37!2m1!1ssmartmaps!4e0!5m1!1e3!23i46991212!23i47054750!23i47083502&key=AIzaSyC1hWIV303e-Ni3cYFjx7q01M4l-a8izdY&token=855*
+*圖：（原文無圖片說明）｜來源：https://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i15!2i27410!3i14033!4i256!2m3!1e0!2sm!3i802568412!2m6!1e2!2straffic!4m2!1st!2s2989779!5i1!3m13!2szh-TW!3sUS!5e18!12m5!1e68!2m2!1sset!2sRoadmap!4e2!12m3!1e37!2m1!1ssmartmaps!4e0!5m1!1e3!23i46991212!23i47054750!23i47083502&key=AIzaSyC1hWIV303e-Ni3cYFjx7q01M4l-a8izdY&token=37615*
 
 ![2025桃園蓮花季](../images/page_012_image_05.jpg)
 

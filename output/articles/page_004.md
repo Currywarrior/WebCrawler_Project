@@ -1,16 +1,16 @@
 # 9個觀音＆新屋景點推薦・全台唯一的客庄海洋聚落，跟著海客漁夫體驗石滬的一日漫遊-客庄小旅行
 
 - 原始網址：https://romantichakka.com/hakkatours/TourExpert?a=1202&fromlist=1&id=1624
-- 網站名稱：romantichakka.com
+- 網站名稱：romantichakka.hakka.gov.tw
 - 作者：（未標示）
 - 發表日期：（未標示）
-- 爬取時間：2026-10-29T16:02:17+08:00　取得方式：requests　正文定位：通用規則 article
+- 爬取時間：2026-11-05T16:33:12+08:00　取得方式：requests　正文定位：通用規則 article
 - 圖片：15 張
 
 ---
 ![桃園新屋、觀音](../images/page_004_image_01.jpg)
 
-*圖：桃園新屋、觀音｜來源：https://romantichakka.com/UserFiles/expertTravel/17/1.jpg*
+*圖：桃園新屋、觀音｜來源：https://romantichakka.hakka.gov.tw/UserFiles/expertTravel/17/1.jpg*
 
 桃園新屋、觀音 等沿海鄉鎮區有著不少客家聚落，聚落濱海而居、農漁兼作，發展出與台灣其他鄉鎮客庄有所不同的生活樣貌，像有「牽罟」、「石滬」及「吹海螺」等百年捕魚文化，是台灣相當少見的「 海洋客家文化 」。這次旅行就讓我們從桃園海岸線展開，走進觀音與新屋沿海風景，探索防風林、體驗百年石滬捕魚、品嚐手作鹹醢飯，再去乘坐大王蓮、草漯沙丘看夕陽，展開一段深度體驗的桃園海客漁夫一日漁事生活。
 
@@ -18,15 +18,15 @@
 
 ![漁夫體驗](../images/page_004_image_02.jpg)
 
-*圖：漁夫體驗｜來源：https://romantichakka.com/UserFiles/expertTravel/17/2.jpg*
+*圖：漁夫體驗｜來源：https://romantichakka.hakka.gov.tw/UserFiles/expertTravel/17/2.jpg*
 
 ![漁夫體驗](../images/page_004_image_03.jpg)
 
-*圖：漁夫體驗｜來源：https://romantichakka.com/UserFiles/expertTravel/17/3.jpg*
+*圖：漁夫體驗｜來源：https://romantichakka.hakka.gov.tw/UserFiles/expertTravel/17/3.jpg*
 
 ![漁夫體驗](../images/page_004_image_04.jpg)
 
-*圖：漁夫體驗｜來源：https://romantichakka.com/UserFiles/expertTravel/17/4.jpg*
+*圖：漁夫體驗｜來源：https://romantichakka.hakka.gov.tw/UserFiles/expertTravel/17/4.jpg*
 
 在過去捕魚技術尚未像現在如此多元且發達時，祖先運用智慧，利用地形及潮汐發展出了獨特的石滬捕魚文化。運用天然地形，再以卵石堆砌成一條海上長城，魚群會隨著漲潮游入石滬中，待潮水退去後，小魚會從石縫中游出，體型較大的魚種就會自然被困在石滬中。因石滬捕魚漁獲量無法固定，加上需要長時間等待潮汐變換、石滬又會因風浪而損毀需要經常修補，現在已經鮮少有人會使用石滬捕魚了。
 
@@ -36,15 +36,15 @@
 
 ![新屋石滬故事館](../images/page_004_image_05.jpg)
 
-*圖：新屋石滬故事館｜來源：https://romantichakka.com/UserFiles/expertTravel/17/5.jpg*
+*圖：新屋石滬故事館｜來源：https://romantichakka.hakka.gov.tw/UserFiles/expertTravel/17/5.jpg*
 
 ![新屋石滬故事館 陳列](../images/page_004_image_06.jpg)
 
-*圖：新屋石滬故事館 陳列｜來源：https://romantichakka.com/UserFiles/expertTravel/17/6.jpg*
+*圖：新屋石滬故事館 陳列｜來源：https://romantichakka.hakka.gov.tw/UserFiles/expertTravel/17/6.jpg*
 
 ![新屋石滬故事館 資料](../images/page_004_image_07.jpg)
 
-*圖：新屋石滬故事館 資料｜來源：https://romantichakka.com/UserFiles/expertTravel/17/7.jpg*
+*圖：新屋石滬故事館 資料｜來源：https://romantichakka.hakka.gov.tw/UserFiles/expertTravel/17/7.jpg*
 
 在臺灣沿海地區也有著不少石滬，只是時間無情更迭，在老一輩離世後缺乏年輕人繼承，缺乏效益又無人傳承下而逐漸消失。 新屋石滬故事館 是早期的警察哨所，現在經過重新整修後，委託「新屋愛鄉協會」經營管理，館內除了推廣海岸環境教育及新屋生態環境外，也作為旅客騎單車沿著新屋綠色隧道來此的休憩中點站，提供新屋石滬靜態展覽及教室使用。
 
@@ -56,15 +56,15 @@
 
 ![海洋客家休閒農業區遊客服務中心](../images/page_004_image_08.jpg)
 
-*圖：海洋客家休閒農業區遊客服務中心｜來源：https://romantichakka.com/UserFiles/expertTravel/17/8.jpg*
+*圖：海洋客家休閒農業區遊客服務中心｜來源：https://romantichakka.hakka.gov.tw/UserFiles/expertTravel/17/8.jpg*
 
 ![海洋客家休閒農業區遊客服務中心 裝置藝術](../images/page_004_image_09.jpg)
 
-*圖：海洋客家休閒農業區遊客服務中心 裝置藝術｜來源：https://romantichakka.com/UserFiles/expertTravel/17/9.jpg*
+*圖：海洋客家休閒農業區遊客服務中心 裝置藝術｜來源：https://romantichakka.hakka.gov.tw/UserFiles/expertTravel/17/9.jpg*
 
 ![海洋客家休閒農業區遊客服務中心 內部](../images/page_004_image_10.jpg)
 
-*圖：海洋客家休閒農業區遊客服務中心 內部｜來源：https://romantichakka.com/UserFiles/expertTravel/17/10.jpg*
+*圖：海洋客家休閒農業區遊客服務中心 內部｜來源：https://romantichakka.hakka.gov.tw/UserFiles/expertTravel/17/10.jpg*
 
 「海洋客家休閒農業區遊客服務中心」是台灣首座海洋客家「牽罟文化館」，場館原是軍方的海防基地，軍方逐漸撤離後，閒置的場域在市政府爭取下，改造轉型為提供旅客到新屋綠色隧道旅遊時的單車休息站。除了有咖啡、輕食提供旅客休憩的餐飲空間外，也展示牽罟歷史照片、捕魚器具及相關農漁珍貴文物，致力將海客文化的技藝透過文字、圖片等方式傳承及保存下來，每年也會配合活動不定期舉辦千人牽罟、築石塭、編織漁網等活動。而牽罟文化館旁的防風林步道別有洞天，防風林不只是用來固沙擋風用，也間接孕育了一片自然生態，跟著導覽員走進防風林步道認識各種濱海植物，也從植物中了解環境保育的重要性。
 
@@ -79,15 +79,15 @@
 
 ![永安海螺文化體驗園區](../images/page_004_image_11.jpg)
 
-*圖：永安海螺文化體驗園區｜來源：https://romantichakka.com/UserFiles/expertTravel/17/11.jpg*
+*圖：永安海螺文化體驗園區｜來源：https://romantichakka.hakka.gov.tw/UserFiles/expertTravel/17/11.jpg*
 
 ![永安海螺文化體驗園區 不同角度](../images/page_004_image_12.jpg)
 
-*圖：永安海螺文化體驗園區 不同角度｜來源：https://romantichakka.com/UserFiles/expertTravel/17/12.jpg*
+*圖：永安海螺文化體驗園區 不同角度｜來源：https://romantichakka.hakka.gov.tw/UserFiles/expertTravel/17/12.jpg*
 
 ![永安海螺文化體驗園區 內部](../images/page_004_image_13.jpg)
 
-*圖：永安海螺文化體驗園區 內部｜來源：https://romantichakka.com/UserFiles/expertTravel/17/13.jpg*
+*圖：永安海螺文化體驗園區 內部｜來源：https://romantichakka.hakka.gov.tw/UserFiles/expertTravel/17/13.jpg*
 
 「 永安海螺文化體驗園區 」是台灣行政院前瞻計畫補助桃園的四大重點場館之一，另三座場館分別是、1895乙未保台紀念公園、桃園北區客家會館及台灣客家茶文化館。在永安海螺文化體驗園區啟用後，將成為桃園海岸線的樞紐，從永安漁港往南北延伸，串連竹圍漁港、許厝港濕地、草漯沙丘、白沙岬燈塔、新屋石滬、觀新藻礁、綠色走廊及新屋農博環境教育園區等桃園濱海觀光景點。旅客來到永安海螺文化體驗園區，透過館中的介紹可以認識桃園濱海生態、環境及新屋的「海客文化（海洋客家文化）」，更全方位且深度認識桃園。
 
@@ -101,11 +101,11 @@
 
 ![向陽農場](../images/page_004_image_14.jpg)
 
-*圖：向陽農場｜來源：https://romantichakka.com/UserFiles/expertTravel/17/14.jpg*
+*圖：向陽農場｜來源：https://romantichakka.hakka.gov.tw/UserFiles/expertTravel/17/14.jpg*
 
 ![向陽農場 不同角度](../images/page_004_image_15.jpg)
 
-*圖：向陽農場 不同角度｜來源：https://romantichakka.com/UserFiles/expertTravel/17/15.jpg*
+*圖：向陽農場 不同角度｜來源：https://romantichakka.hakka.gov.tw/UserFiles/expertTravel/17/15.jpg*
 
 向陽農場 過去曾吸引許多偶像劇來此地拍攝，成為桃園著名的花海農場，不僅是北台灣最大的向日葵主題農場，更是桃園老字號的農場。還記得高中時期假日最喜歡和朋友從中壢車站搭公車到向陽農場烤肉和拍照，因園區中廣泛種植大面積的向日葵花海，還會因季節更換花卉，有百日菊、百合花及薰衣草，不管什麼季節來，都讓人有美麗的花海可以拍攝。數年過去，與家人再訪向陽農場，沒想到農場的規模更龐大了，不僅設有野餐區和烤肉區、婚宴會廳，還有户外及室内的活動專區，假日吸引了許多家長帶著小朋友前來踏青遊樂，更可以吃到許多以向日葵、觀音蓮花製成的美食，有葵瓜子、布丁、蓮子酥、蓮花脆餅等等。不過園區的向日葵品種雖然還是很多，但整體花海的規模也不如以往了。
 

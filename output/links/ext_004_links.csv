@@ -17,12 +17,14 @@ https://travel.tycg.gov.tw/dalongmen/,大龍門主題網,False,False
 https://travel.tycg.gov.tw/zh-tw/travel/tourlist,行程快搜,False,False
 https://travel.tycg.gov.tw/zh-tw/travel/start-itinerary-in-taoyuan,遊臺灣從桃園開始,False,False
 https://travel.tycg.gov.tw/zh-tw/travel/travel-guide,旅遊懶人包,False,False
+https://travel.tycg.gov.tw/lalashan-dark-sky/,北橫觀星指南,False,False
 https://travel.tycg.gov.tw/zh-tw/travel/get-around-by-airport-mrt,搭機捷遊桃園,False,False
 https://travel.tycg.gov.tw/zh-tw/travel/temple-blessing-tour,宮廟祈福之旅,False,False
 https://travel.tycg.gov.tw/zh-tw/travel/child-venue,親子放電場館,False,False
 https://travel.tycg.gov.tw/zh-tw/travel/factory-tours,體驗觀光工廠,False,False
 https://travel.tycg.gov.tw/zh-tw/travel/flower-viewing,四季賞花情報,False,False
 https://travel.tycg.gov.tw/zh-tw/travel/new-traveler,初次造訪桃園,False,False
+https://travel.tycg.gov.tw/zh-tw/travel/dalongmentrail,大龍門古道,False,False
 https://travel.tycg.gov.tw/zh-tw/travel/trail,步道漫遊趣,False,False
 https://travel.tycg.gov.tw/zh-tw/travel/bicycle,單車旅行,False,False
 https://travel.tycg.gov.tw/zh-tw/travel/parent-child-park,特色公園遊,False,False
@@ -103,39 +105,48 @@ https://travel.tycg.gov.tw/content/images/attractions/48706/480x360_attractions-
 "https://www.google.com.tw/maps/place/25.045887,121.091171",導航,True,False
 "https://www.google.com.tw/maps/place/25.0239559,121.086201",導航,True,False
 https://autopass.app.link/ZYhRNNFeET,查看更多停車優惠,True,False
-https://www.instagram.com/p/DA8cy_sBIqX,,False,False
-https://www.instagram.com/explore/tags/蔡小妞依玲,#蔡小妞依玲,False,False
-https://www.instagram.com/explore/tags/珍珠海岸一日遊,#珍珠海岸一日遊,False,False
-https://www.instagram.com/explore/tags/竹圍漁港,#竹圍漁港,False,False
-https://www.instagram.com/explore/tags/豬鼻子沙灘,#豬鼻子沙灘,False,False
+https://www.instagram.com/p/CxNp8EasPKH,,False,False
+https://www.instagram.com/explore/tags/跟著小桃走,#跟著小桃走,False,False
+https://www.instagram.com/explore/tags/桃園,#桃園,False,False
+https://www.instagram.com/explore/tags/新屋百年石滬,#新屋百年石滬,False,True
 https://www.instagram.com/explore/tags/白沙岬燈塔,#白沙岬燈塔,False,True
-https://www.instagram.com/explore/tags/觀音草漯沙丘,#觀音草漯沙丘,False,True
-https://www.instagram.com/explore/tags/永安漁港,#永安漁港,False,False
-https://www.instagram.com/explore/tags/永安海螺文化體驗園區,#永安海螺文化體驗園區,False,False
-https://lihi.cc/PRbvW,https://lihi.cc/PRbvW,False,False
-https://www.instagram.com/explore/tags/請見留言處,#請見留言處,False,False
+https://www.instagram.com/explore/tags/新北,#新北,False,False
+https://www.instagram.com/explore/tags/金山老街,#金山老街,False,False
+https://www.instagram.com/explore/tags/九份老街,#九份老街,False,False
+https://www.instagram.com/explore/tags/臺北,#臺北,False,False
+https://www.instagram.com/explore/tags/魚路古道,#魚路古道,False,False
+https://www.instagram.com/explore/tags/擎天崗,#擎天崗,False,False
+https://www.instagram.com/explore/tags/基隆,#基隆,False,False
+https://www.instagram.com/explore/tags/正濱漁港,#正濱漁港,False,False
+https://www.instagram.com/explore/tags/廟口夜市,#廟口夜市,False,False
+https://www.instagram.com/explore/tags/樂遊桃園FB,#樂遊桃園FB,False,False
 https://www.instagram.com/explore/tags/桃園旅遊,#桃園旅遊,False,False
 https://www.instagram.com/explore/tags/樂遊桃園,#樂遊桃園,False,False
 https://www.instagram.com/explore/tags/taoyuantravel,#taoyuantravel,False,False
-https://www.instagram.com/explore/tags/桃園珍珠海岸旅遊廊帶,#桃園珍珠海岸旅遊廊帶,False,False
-https://www.instagram.com/explore/tags/桃園一日遊,#桃園一日遊,False,False
-https://www.instagram.com/explore/tags/大園觀音景點,#大園觀音景點,False,True
-https://www.instagram.com/explore/tags/新屋景點,#新屋景點,False,True
-https://www.instagram.com/explore/tags/蔡小妞帶路,#蔡小妞帶路,False,False
-https://www.instagram.com/explore/tags/taoyuan,#taoyuan,False,False
-https://www.instagram.com/explore/tags/타오위안,#타오위안,False,False
-https://www.instagram.com/explore/tags/とうえん,#とうえん,False,False
-https://www.instagram.com/explore/tags/เถาหยวน,#เถาหยวน,False,False
+https://www.instagram.com/explore/tags/青春山海線,#青春山海線,False,False
+https://www.instagram.com/explore/tags/基北北桃,#基北北桃,False,False
+https://www.instagram.com/explore/tags/海岸線,#海岸線,False,False
+https://www.instagram.com/explore/tags/戶外,#戶外,False,False
+https://www.instagram.com/explore/tags/親子景點,#親子景點,False,False
+https://www.instagram.com/explore/tags/桃園景點,#桃園景點,False,False
+https://www.instagram.com/explore/tags/大自然,#大自然,False,False
+https://www.instagram.com/explore/tags/taoyuancity,#taoyuancity,False,False
+https://www.instagram.com/explore/tags/planyourtrip,#planyourtrip,False,False
+https://www.instagram.com/explore/tags/twwheretogo,#twwheretogo,False,False
+https://www.instagram.com/explore/tags/taiwantrip,#taiwantrip,False,False
+https://www.instagram.com/explore/tags/fyp,#fyp,False,False
+https://www.instagram.com/explore/tags/picoftheday,#picoftheday,False,False
 https://www.facebook.com/sharer/sharer.php?u=https://travel.tycg.gov.tw/zh-tw/travel/attraction/276,分享到 facebook,False,False
 http://service.weibo.com/share/share.php?url=https://travel.tycg.gov.tw/zh-tw/travel/attraction/276&amp;title=白沙岬燈塔&amp;language=zh-tw,分享到 Weibo,False,True
 http://line.naver.jp/R/msg/text/?白沙岬燈塔%20https://travel.tycg.gov.tw/zh-tw/travel/attraction/276,分享到 line,False,True
-https://travel.tycg.gov.tw/zh-tw/travel/attraction/135,上一則,True,False
-https://travel.tycg.gov.tw/zh-tw/travel/attraction/292,下一則,True,False
-https://travel.tycg.gov.tw/zh-tw/travel/attraction/591,4.4 觀音濱海遊憩區 星期四：24 小時營業 人氣 128199,True,True
+https://travel.tycg.gov.tw/zh-tw/travel/attraction/188,上一則,True,False
+https://travel.tycg.gov.tw/zh-tw/travel/attraction/311,下一則,True,False
+https://travel.tycg.gov.tw/zh-tw/travel/attraction/591,4.4 觀音濱海遊憩區 星期四：24 小時營業 人氣 128455,True,True
+https://travel.tycg.gov.tw/zh-tw/travel/attraction/292,4.6 甘泉寺 星期四：06:00 - 21:00 人氣 118552,True,True
 https://travel.tycg.gov.tw/zh-tw/travel/attraction/2394,"沿海生活實驗室(珍珠海岸改造共創基地) 開館日
 週四至週一 10:30 -17:30 (中午12:30-13:30不開放)
 假日及國定假日:09:30-17",True,False
-https://travel.tycg.gov.tw/zh-tw/travel/attraction/1167,2.6 中台環境資源教育中心 星期四：09:00 - 12:00、13:30 - 17:00 人氣 40700,True,False
+https://travel.tycg.gov.tw/zh-tw/travel/attraction/1167,2.6 中台環境資源教育中心 星期四：09:00 - 12:00、13:30 - 17:00 人氣 40749,True,False
 https://www.facebook.com/traveltaoyuan,樂遊桃園,False,False
 https://www.instagram.com/taoyuantravel/,Instagram,False,False
 https://www.facebook.com/gototaoyuan/,桃園風景區管理處,False,False

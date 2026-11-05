@@ -13,7 +13,7 @@ import json
 import os
 import sys
 from datetime import datetime
-from urllib.parse import urlparse, parse_qsl, urlencode, urlunparse
+from urllib.parse import urlparse, parse_qsl, urlencode, urlunparse, unquote
 
 import imagehash
 from PIL import Image
@@ -31,6 +31,9 @@ EXT_PER_SEED = 3
 EXT_TOTAL = 30
 EXT_DOMAINS = ("wikipedia.org", "gov.tw", "travel.tycg.gov.tw", "culture.tw")
 SKIP_EXT = (".pdf", ".jpg", ".jpeg", ".png", ".gif", ".zip", ".doc", ".docx", ".xls", ".mp4")
+# 標籤／分類／搜尋／沙龍列表／維基系統頁不是文章，不佔延伸名額
+SKIP_EXT_PATH = ("/tag/", "/tags/", "/category/", "/categories/", "/search", "advanced_search",
+                 "/room/", "/w/index.php", "special:")
 MAX_IMAGES = 15
 MIN_SIDE = 150
 
@@ -226,6 +229,8 @@ def pick_extensions(doc, seen):
         u = normalize(l["url"])
         host = urlparse(u).netloc
         if not l["related"] or u in seen or u.lower().endswith(SKIP_EXT):
+            continue
+        if any(k in unquote(u).lower() for k in SKIP_EXT_PATH):
             continue
         if not (host == seed_host or host.endswith(EXT_DOMAINS)):
             continue

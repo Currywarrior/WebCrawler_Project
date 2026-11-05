@@ -4,7 +4,6 @@ https://tcmb.culture.tw/zh-tw/explore,素材,False,False
 https://tcmb.culture.tw/zh-tw/subject,主題,False,False
 https://tcmb.culture.tw/zh-tw/curation,策展,False,False
 https://tcmb.culture.tw/zh-tw/sitemap,,False,False
-https://translate.google.com,翻譯,False,False
 https://tcmb.culture.tw/zh-tw/datasearch,搜尋,False,False
 https://dcm.s3.hicloud.net.tw/new/collection/2020-10-30/519824cf-d761-46c2-a304-a02caedc0603/bcec0ed3-5c80-4196-bbfa-3ced582f1155.jpg,查看大圖,False,False
 https://tcmb.culture.tw/zh-tw/license,創用CC姓名標示 3.0 台灣及其後版本(CC BY 3.0 TW +),False,False
@@ -19,9 +18,9 @@ https://cmsdb.culture.tw/route/0E98088E-7626-49C6-BD95-A81E82DEFA86,原始資料
 https://tcmb.culture.tw/zh-tw/datasearch?query=%7B%22fetchIndex%22:%5B%22%E6%94%B6%E5%AD%98%E7%B3%BB%E7%B5%B1%22%5D%7D,收存系統,False,False
 https://tcmb.culture.tw/zh-tw/datasearch?query=%7B%22subject%22:%22%E7%A9%BA%E9%96%93%E3%80%81%E5%9C%B0%E5%9F%9F%E8%88%87%E9%81%B7%E5%BE%99%22%7D,空間、地域與遷徙,False,False
 https://tcmb.culture.tw/zh-tw/datasearch?query=%7B%22createDept%22:%22%E4%BA%AC%E5%85%86%E4%BC%81%E6%A5%AD%E7%A4%BE%22%7D,京兆企業社,False,False
-https://tcmb.culture.tw/zh-tw/detail?indexCode=Culture_Object&id=572980,遷村離散的開始～石門水庫淹沒區土地徵收通知單,False,True
-https://tcmb.culture.tw/zh-tw/detail?indexCode=Culture_Object&id=574844,大潭移民新村泰雅族信仰中心─基國派教堂,False,True
-https://tcmb.culture.tw/zh-tw/detail?indexCode=Culture_Route&id=589693,石門水庫移民聚落─觀音大潭移民新村(漢籍聚落)與茄苳坑,False,True
+https://tcmb.culture.tw/zh-tw/detail?indexCode=Culture_Event&id=595256,高銀化工鎘污染—日本新聞報導,False,False
+https://tcmb.culture.tw/zh-tw/detail?indexCode=Culture_Event&id=554906,高銀化工鎘污染之抗爭事件,False,False
+https://tcmb.culture.tw/zh-tw/detail?indexCode=Culture_Object&id=667480,許厝港藻礁圳頭段,False,True
 https://tcmb.culture.tw/zh-tw/datasearch?indexCode=Culture_Route&id=593957&query=%7B%0A%20%20%22createDept%22:%20%22%E4%BA%AC%E5%85%86%E4%BC%81%E6%A5%AD%E7%A4%BE%22%0A%7D,更 多,False,False
 https://www.nmth.gov.tw/,,False,False
 https://tcmb.culture.tw/zh-tw/contactus,客服信箱,False,False

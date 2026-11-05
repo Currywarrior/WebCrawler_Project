@@ -1,21 +1,56 @@
 ﻿url,text,in_content,related
-https://ganquan.lightsbless.com/Select,點燈 點燈,False,False
-https://www.ganquan-temple.org.tw/,,True,False
-https://www.ganquan-temple.org.tw/aboutus,關於甘泉寺,True,True
-https://www.ganquan-temple.org.tw/aboutus/奉祀神祇,奉祀神祇,False,False
-https://www.ganquan-temple.org.tw/aboutus/參拜順序,參拜順序,False,False
-https://www.ganquan-temple.org.tw/news,最新消息,False,False
-https://www.ganquan-temple.org.tw/news/活動公告,活動公告,False,False
-https://www.ganquan-temple.org.tw/news/活動花絮,活動花絮,False,False
-https://www.ganquan-temple.org.tw/news/媒體報導,影音,False,False
-https://www.ganquan-temple.org.tw/blog,法會活動,False,False
-https://www.ganquan-temple.org.tw/blog/贊普,贊普,False,False
-https://www.ganquan-temple.org.tw/blog/公益慈善,公益慈善,False,False
-https://line.me/R/ti/p/@678beled?oat_content=url&ts=08141935,線上解籤,False,False
-https://ganquan.lightsbless.com/FindLights,手機尋燈,False,False
-https://temple3d.hotel360.com.tw/place/00004,VR尋燈導覽,False,False
-https://www.ganquan-temple.org.tw/asset,文化資產,False,False
-https://www.ganquan-temple.org.tw/asset/文物介紹,文物介紹,False,False
-https://www.ganquan-temple.org.tw/contactus,聯絡我們,False,False
-https://www.ganquan-temple.org.tw/sitemap,網站地圖,False,False
-https://www.ganquan-temple.org.tw/service/隱私權政策,隱私權政策,False,False
+https://vocus.cc/,,False,False
+https://vocus.cc/salon/688b0b79fd897800010bfb2f,悠遊時光,False,False
+https://vocus.cc/salon/688b0b79fd897800010bfb2f/room/690c4d38cebbddbc5cbb3cf4,玉皇上帝、玄天上帝（上帝公）,False,False
+https://vocus.cc/salon/688b0b79fd897800010bfb2f/room/690c7460cebbddbc5cbbef6f,保生大帝（大道公、神農大帝、感天大帝）,False,True
+https://vocus.cc/salon/688b0b79fd897800010bfb2f/room/690c501fcebbddbc5cbb3d25,天上聖母（媽祖）,False,False
+https://vocus.cc/salon/688b0b79fd897800010bfb2f/room/690c75b2cebbddbc5cbbf1b0,觀音佛祖（觀音菩薩）/如來佛祖,False,True
+https://vocus.cc/salon/688b0b79fd897800010bfb2f/room/690ca6d9cebbddbc5cbc81ba,中壇元帥（三太子）,False,False
+https://vocus.cc/salon/688b0b79fd897800010bfb2f/room/690caca6cebbddbc5cbcb34d,五府千歲（王爺，千歲，元帥，大夫）,False,False
+https://vocus.cc/salon/688b0b79fd897800010bfb2f/room/690cb093cebbddbc5cbcb5e0,臨水夫人（陳靖姑/夫人）,False,False
+https://vocus.cc/salon/688b0b79fd897800010bfb2f/room/690d391bcebbddbc5cbe3031,福德正神（財神）,False,False
+https://vocus.cc/salon/688b0b79fd897800010bfb2f/room/690d423dcebbddbc5cbe31a0,濟公活佛（禪師）,False,False
+https://vocus.cc/salon/688b0b79fd897800010bfb2f/room/690d4cb5cebbddbc5cbe6033,地藏王菩薩（城隍爺，鍾馗爺）,False,False
+https://vocus.cc/salon/688b0b79fd897800010bfb2f/room/690d4d74cebbddbc5cbe6036,齊天大聖,False,False
+https://vocus.cc/salon/688b0b79fd897800010bfb2f/room/690d4f11cebbddbc5cbe6045,關聖帝君（關公）,False,False
+https://vocus.cc/salon/688b0b79fd897800010bfb2f/room/690d8880cebbddbc5cbf41a8,廣澤尊王/開彰聖王,False,False
+https://vocus.cc/salon/688b0b79fd897800010bfb2f/room/690d8d04cebbddbc5cbf41c4,清水祖師/八卦祖師/慚愧祖師,False,False
+https://vocus.cc/salon/688b0b79fd897800010bfb2f/room/690d8d90cebbddbc5cbf767a,王母娘娘（地母、娘娘）,False,False
+https://vocus.cc/salon/688b0b79fd897800010bfb2f/room/690dcb0acebbddbc5cc063b5,特殊廟宇（其他）,False,False
+https://vocus.cc/salon/688b0b79fd897800010bfb2f/room/690ddb10cebbddbc5cc08f58,九天玄女,False,False
+https://vocus.cc/salon/688b0b79fd897800010bfb2f/room/69127c5bcebbddbc5cccf859,三官大帝,False,False
+https://vocus.cc/salon/688b0b79fd897800010bfb2f/room/69151f96cebbddbc5cd4da46,水仙尊王,False,False
+https://vocus.cc/salon/688b0b79fd897800010bfb2f/room/6949e7e2d12907429fc3ff47,八仙系列,False,False
+https://vocus.cc/salon/688b0b79fd897800010bfb2f/about,關於,False,False
+https://vocus.cc/article/69382030fd89780001707e86,一、慈雲寺歷史沿革、由來與典故,False,False
+https://vocus.cc/user/688b0b01fd897800010bdd48,,False,False
+https://vocus.cc/article/6900948dfd89780001856dfe,,False,False
+https://vocus.cc/tags/%E7%BE%8E%E9%A3%9F,# 美食,False,False
+https://vocus.cc/tags/%E5%8F%83%E6%8B%9C,# 參拜,False,False
+https://vocus.cc/tags/%E5%BB%9F%E5%AE%87,# 廟宇,False,False
+https://vocus.cc/tags/%E4%BF%A1%E4%BB%B0,# 信仰,False,False
+https://vocus.cc/tags/%E7%89%B9%E8%89%B2,# 特色,False,False
+https://vocus.cc/tags/%E4%B8%80%E6%97%A5%E9%81%8A,# 一日遊,False,False
+https://vocus.cc/tags/%E6%96%87%E5%8C%96%E5%B7%A1%E7%A6%AE,# 文化巡禮,False,False
+https://vocus.cc/tags/%E6%99%AF%E9%BB%9E,# 景點,False,False
+https://vocus.cc/tags/%E6%96%B9%E6%A0%BC%E6%96%B0%E6%89%8B,# 方格新手,False,False
+https://vocus.cc/tags/%E9%80%A3%E5%81%87,# 連假,False,False
+https://vocus.cc/tags/%E8%A7%80%E9%9F%B3,# 觀音,False,True
+https://vocus.cc/tags/%E9%80%9A%E9%9C%84,# 通霄,False,False
+https://vocus.cc/tags/%E5%AF%BA%E5%BB%9F,# 寺廟,False,False
+https://vocus.cc/tags/%E6%B5%B7%E7%B7%9A,# 海線,False,False
+https://vocus.cc/tags/%E5%A4%A9%E7%A9%BA%E4%B9%8B%E9%8F%A1,# 天空之鏡,False,False
+https://vocus.cc/article/696f12a1fd8978000135add5,"上一篇 新港月眉潭九天宮一日遊
+
+關聖帝君坐鎮・九天三歲太子一化九的信仰祕密｜參拜流程、慶典、交通、美食全攻略",False,False
+https://vocus.cc/article/694a8e6afd89780001ca976d,下一篇 高雄鳳山在地信仰核心｜孚佑帝君修道文化×祈福參拜×輕旅行指南,False,False
+https://vocus.cc/article/693a1194fd89780001eafe82,五股西雲寺一日遊：清幽古剎的百年香火之旅｜歷史、參拜流程、周邊景點、美食全攻略,False,False
+https://vocus.cc/article/6912ea84fd89780001be35a3,員林慈天宮一日遊：觀音佛祖庇佑的心靈之旅，探索員林信仰文化與美食景點,False,True
+https://vocus.cc/article/693b6252fd897800016ba368,五股凌雲禪寺一日遊：巨型千手觀音、百年古剎、祈福能量滿滿的靜心旅程,False,True
+https://vocus.cc/tags/方格新手,# 方格新手,False,False
+https://vocus.cc/salon/694a7d49fd89780001c5ba55,里茲放飛日記,False,False
+https://vocus.cc/article/6ae502eefd89780001b60010,💡 公共空間屬於每一個人嗎？從英國里茲 Light Night 看凝聚城市的藝術活動,False,False
+https://vocus.cc/salon/Islandisland,有人在家,False,False
+https://vocus.cc/article/6ae2a2f9fd897800014deb5c,蝴蝶來了,False,False
+https://vocus.cc/salon/GREENLAND,Greenland的建築旅行筆記,False,False
+https://vocus.cc/article/6ae1cd23fd89780001cdd046,消失的福州街6號,False,False

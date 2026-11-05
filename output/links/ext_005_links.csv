@@ -6,7 +6,7 @@ https://travel.tycg.gov.tw/zh-tw/event/calendar/,節慶與活動,False,False
 https://travel.tycg.gov.tw/zh-tw/multimedia/live-camera/,即時影像,False,False
 https://travel.tycg.gov.tw/zh-tw/immersive/,線上遊桃園,False,False
 https://travel.tycg.gov.tw/zh-tw/digital-twin/,虛擬旅行新體驗,False,False
-https://travel.tycg.gov.tw/zh-tw/event,最新消息,True,False
+https://travel.tycg.gov.tw/zh-tw/event,最新消息,False,False
 https://travel.tycg.gov.tw/zh-tw/reports,桃園夯話題,False,False
 https://travel.tycg.gov.tw/zh-tw/event/couponlist,優惠情報,False,False
 https://travel.tycg.gov.tw/zh-tw/interesting-things,上週最熱門,False,False
@@ -14,15 +14,17 @@ https://travel.tycg.gov.tw/zh-tw/event/scenicalbumlist,桃園花訊,False,False
 https://travel.tycg.gov.tw/pearl-coast/,探索珍珠海岸,False,False
 https://travel.tycg.gov.tw/zh-tw/travel/ota,行程、票券預購專區,False,False
 https://travel.tycg.gov.tw/dalongmen/,大龍門主題網,False,False
-https://travel.tycg.gov.tw/zh-tw/travel/tourlist,行程快搜,True,False
+https://travel.tycg.gov.tw/zh-tw/travel/tourlist,行程快搜,False,False
 https://travel.tycg.gov.tw/zh-tw/travel/start-itinerary-in-taoyuan,遊臺灣從桃園開始,False,False
 https://travel.tycg.gov.tw/zh-tw/travel/travel-guide,旅遊懶人包,False,False
+https://travel.tycg.gov.tw/lalashan-dark-sky/,北橫觀星指南,False,False
 https://travel.tycg.gov.tw/zh-tw/travel/get-around-by-airport-mrt,搭機捷遊桃園,False,False
 https://travel.tycg.gov.tw/zh-tw/travel/temple-blessing-tour,宮廟祈福之旅,False,False
 https://travel.tycg.gov.tw/zh-tw/travel/child-venue,親子放電場館,False,False
 https://travel.tycg.gov.tw/zh-tw/travel/factory-tours,體驗觀光工廠,False,False
 https://travel.tycg.gov.tw/zh-tw/travel/flower-viewing,四季賞花情報,False,False
 https://travel.tycg.gov.tw/zh-tw/travel/new-traveler,初次造訪桃園,False,False
+https://travel.tycg.gov.tw/zh-tw/travel/dalongmentrail,大龍門古道,False,False
 https://travel.tycg.gov.tw/zh-tw/travel/trail,步道漫遊趣,False,False
 https://travel.tycg.gov.tw/zh-tw/travel/bicycle,單車旅行,False,False
 https://travel.tycg.gov.tw/zh-tw/travel/parent-child-park,特色公園遊,False,False
@@ -30,7 +32,7 @@ https://travel.tycg.gov.tw/zh-tw/travel/shihmen-reservoir-tour,石門水庫行,F
 https://travel.tycg.gov.tw/zh-tw/travel/indigenous-homelands,北橫原鄉,False,False
 https://travel.tycg.gov.tw/zh-tw/travel/riversides-and-ponds,水岸埤塘,False,False
 https://travel.tycg.gov.tw/zh-tw/travel/districts,分區介紹,False,False
-https://travel.tycg.gov.tw/zh-tw/travel,景點搜尋,True,False
+https://travel.tycg.gov.tw/zh-tw/travel,景點搜尋,False,False
 https://travel.tycg.gov.tw/zh-tw/travel/mapnavigate,旅遊地圖,False,False
 https://travel.tycg.gov.tw/zh-tw/travel/popular-attractions,TOP熱門景點,False,False
 https://travel.tycg.gov.tw/zh-tw/travel/mountainous,山林探險,False,False
@@ -44,7 +46,7 @@ https://travel.tycg.gov.tw/zh-tw/consume/business-district,夜市商圈逛逛逛
 https://travel.tycg.gov.tw/zh-tw/consume/shopping-paradise,購物天堂在桃園,False,False
 https://travel.tycg.gov.tw/zh-tw/consume?type=shopping&category=105,金牌好禮,False,False
 https://travel.tycg.gov.tw/zh-tw/accommodation/recommend,精選住宿指南,False,False
-https://travel.tycg.gov.tw/zh-tw/accommodation,旅館與民宿,True,False
+https://travel.tycg.gov.tw/zh-tw/accommodation,旅館與民宿,False,False
 https://travel.tycg.gov.tw/zh-tw/accommodation/besttaoyuanstay,桃園好棧,False,False
 https://travel.tycg.gov.tw/zh-tw/accommodation?certification=149,穆斯林友善,False,False
 https://travel.tycg.gov.tw/zh-tw/accommodation?certification=148,環保旅店,False,False
@@ -63,7 +65,7 @@ https://travel.tycg.gov.tw/zh-tw/multimedia/filmcategory,多媒體影音,False,F
 https://travel.tycg.gov.tw/zh-tw/multimedia/links,好站連結,False,False
 https://gallery.tycg.gov.tw/event-highlights,歷屆活動網,False,False
 https://ebook.tycg.gov.tw/book/list.php?type=27,桃園旅遊雜誌,False,False
-https://travel.tycg.gov.tw/zh-tw/traffic/gettinghere,如何到桃園,True,False
+https://travel.tycg.gov.tw/zh-tw/traffic/gettinghere,如何到桃園,False,False
 https://travel.tycg.gov.tw/zh-tw/traffic/airportmrt,桃園捷運,False,False
 https://www.taoyuan-airport.com/main_ch/,桃園國際機場,False,False
 https://travel.tycg.gov.tw/zh-tw/traffic/passenger,長途客運,False,False
@@ -85,21 +87,12 @@ https://travel.tycg.gov.tw/id,Indonesia,False,False
 https://travel.tycg.gov.tw/th,ไทย,False,False
 https://travel.tycg.gov.tw/vi,Người việt nam,False,False
 https://travel.tycg.gov.tw/zh-tw/search,全文檢索,False,False
-https://travel.tycg.gov.tw/zh-tw/tag/detail/4,美食小吃,True,False
-https://travel.tycg.gov.tw/zh-tw/tag/detail/5,石門水庫,True,True
-https://travel.tycg.gov.tw/zh-tw/tag/detail/6,自然生態,True,False
-https://travel.tycg.gov.tw/zh-tw/tag/detail/7,單車小旅行,True,False
-https://travel.tycg.gov.tw/zh-tw/tag/detail/8,慈湖,True,False
-https://travel.tycg.gov.tw/zh-tw/tag/detail/9,濱海漁港,True,False
-https://travel.tycg.gov.tw/zh-tw/tag/detail/10,北橫,True,False
-https://travel.tycg.gov.tw/zh-tw/tag/detail/12,玩翻農牧場,True,False
-https://travel.tycg.gov.tw/zh-tw/tag/detail/13,野餐好潮,True,False
-https://travel.tycg.gov.tw/zh-tw/tag/detail/14,追星夯點,True,False
-https://travel.tycg.gov.tw/zh-tw/tag/detail/15,療癒系森林,True,False
-https://travel.tycg.gov.tw/zh-tw/tag/detail/16,就愛閒逛街,True,False
-https://travel.tycg.gov.tw/zh-tw/consume,美食消費,True,False
-https://travel.tycg.gov.tw/zh-tw/event/activitylist,近期活動,True,False
-https://travel.tycg.gov.tw/zh-tw/tag/theme,主題TAG,True,False
+https://travel.tycg.gov.tw/,首頁,False,False
+https://travel.tycg.gov.tw/zh-tw/travel/attraction/351,更多石門水庫介紹,True,True
+https://www.facebook.com/sharer/sharer.php?u=https://travel.tycg.gov.tw/zh-tw/travel/shihmen-reservoir-tour,分享到Facebook,False,False
+http://service.weibo.com/share/share.php?url=https://travel.tycg.gov.tw/zh-tw/travel/shihmen-reservoir-tour&title=%e7%9f%b3%e9%96%80%e6%b0%b4%e5%ba%ab%e8%a1%8c&language=zh_tw,分享到微博,False,True
+https://line.naver.jp/R/msg/text/?%e7%9f%b3%e9%96%80%e6%b0%b4%e5%ba%ab%e8%a1%8c%20https://travel.tycg.gov.tw/zh-tw/travel/shihmen-reservoir-tour?openExternalBrowser=1,LINE 給好友,False,True
+https://travel.tycg.gov.tw/zh-tw/travel/cycling-tours,單車旅行,False,False
 https://www.facebook.com/traveltaoyuan,樂遊桃園,False,False
 https://www.instagram.com/taoyuantravel/,Instagram,False,False
 https://www.facebook.com/gototaoyuan/,桃園風景區管理處,False,False

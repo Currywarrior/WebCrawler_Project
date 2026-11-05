@@ -1,10 +1,10 @@
 ﻿url,text,in_content,related
-https://www.guanyin-hro.tycg.gov.tw/Advanced_Search.aspx?q=書表下載,書表下載,True,True
-https://www.guanyin-hro.tycg.gov.tw/Advanced_Search.aspx?q=門牌查詢,門牌查詢,True,True
-https://www.google.com.tw/advanced_search?hl=zh-Hant-tw&as_sitesearch=https://www.guanyin-hro.tycg.gov.tw,進階搜尋,True,True
+https://www.guanyin-hro.tycg.gov.tw/Advanced_Search.aspx?q=書表下載,書表下載,False,True
+https://www.guanyin-hro.tycg.gov.tw/Advanced_Search.aspx?q=門牌查詢,門牌查詢,False,True
+https://www.google.com.tw/advanced_search?hl=zh-Hant-tw&as_sitesearch=https://www.guanyin-hro.tycg.gov.tw,進階搜尋,False,True
 https://www.guanyin-hro.tycg.gov.tw/cl.aspx?n=13766,認識我們,False,True
 https://www.guanyin-hro.tycg.gov.tw/cp.aspx?n=13767,主管介紹,False,True
-https://www.guanyin-hro.tycg.gov.tw/cp.aspx?n=13768,環境介紹,False,True
+https://www.guanyin-hro.tycg.gov.tw/cp.aspx?n=13768,環境介紹,True,True
 https://www.guanyin-hro.tycg.gov.tw/cp.aspx?n=13769,組織架構,False,True
 https://www.guanyin-hro.tycg.gov.tw/cp.aspx?n=13770,業務職掌,False,True
 https://www.guanyin-hro.tycg.gov.tw/cp.aspx?n=13771,所徽介紹,False,True
@@ -22,18 +22,18 @@ https://www.guanyin-hro.tycg.gov.tw/cl.aspx?n=13779,業務資訊,False,True
 https://www.guanyin-hro.tycg.gov.tw/cl.aspx?n=13780,統計資訊-人口統計,False,True
 https://glrs.moi.gov.tw/LawContent.aspx?id=GL000146,戶籍罰鍰處罰金額基準表,False,False
 https://www.guanyin-hro.tycg.gov.tw/cl.aspx?n=13786,新住民專區,False,True
-https://www.guanyin-hro.tycg.gov.tw/cl.aspx?n=13793,門牌專區,True,True
+https://www.guanyin-hro.tycg.gov.tw/cl.aspx?n=13793,門牌專區,False,True
 https://www.ris.gov.tw/app/portal/91,法規資訊,False,False
 https://cab.tycg.gov.tw/News.aspx?n=7837&sms=12162,標準作業流程,False,False
 https://www.guanyin-hro.tycg.gov.tw/News_Content.aspx?n=13777&s=1098928,戶政規費收費標準,False,True
 https://www.ris.gov.tw/app/portal/3014,國民身分證補換資料查詢,False,False
 https://www.tycg.gov.tw/News.aspx?n=96&sms=7922&_CSN=656,施政計畫,False,False
 https://www.tycg.gov.tw/News.aspx?n=95&sms=7921&_CSN=617,施政報告,False,False
-https://www.ris.gov.tw/app/portal/158,常見問答,True,False
+https://www.ris.gov.tw/app/portal/158,常見問答,False,False
 https://www.guanyin-hro.tycg.gov.tw/cl.aspx?n=13808,便民服務,False,True
 https://www.guanyin-hro.tycg.gov.tw/cp.aspx?n=20219,桃園市各區戶所等待人數,False,True
 https://www.guanyin-hro.tycg.gov.tw/cp.aspx?n=25023,桃園市各區戶所線上取號,False,True
-https://www.guanyin-hro.tycg.gov.tw/News_Link.aspx?n=13809&sms=15805,常用服務,True,True
+https://www.guanyin-hro.tycg.gov.tw/News_Link.aspx?n=13809&sms=15805,常用服務,False,True
 https://www.guanyin-hro.tycg.gov.tw/ENews.aspx?n=13811&sms=17539,線上申辦,False,True
 https://www.ris.gov.tw/app/portal/260,網路預約申請(查詢與取消),False,False
 https://www.guanyin-hro.tycg.gov.tw/cp.aspx?n=13813,桃園市代收代辦代送首次申辦護照服務,False,True
@@ -47,11 +47,11 @@ https://www.guanyin-hro.tycg.gov.tw/ActiveList.aspx?n=25065&sms=20563,活動報�
 https://www.guanyin-hro.tycg.gov.tw/cl.aspx?n=13824,機關通訊錄,False,True
 https://www.guanyin-hro.tycg.gov.tw/cp.aspx?n=13825,機關聯絡資訊,False,True
 https://www.guanyin-hro.tycg.gov.tw/cp.aspx?n=13826,交通資訊,False,True
-https://taotalk.tycg.gov.tw/interface/Petition?channel=G_DEPC_380023100A,市政信箱,True,False
+https://taotalk.tycg.gov.tw/interface/Petition?channel=G_DEPC_380023100A,市政信箱,False,False
 https://www.guanyin-hro.tycg.gov.tw/cp.aspx?n=13828,服務時間,False,True
 https://www.guanyin-hro.tycg.gov.tw/cp.aspx?n=13829,桃園市各戶所聯絡資訊,False,True
 https://www.guanyin-hro.tycg.gov.tw/cl.aspx?n=13830,政府資訊公開,False,True
-https://www.guanyin-hro.tycg.gov.tw/cp.aspx?n=13831,政府資訊公開,True,True
+https://www.guanyin-hro.tycg.gov.tw/cp.aspx?n=13831,政府資訊公開,False,True
 https://www.guanyin-hro.tycg.gov.tw/News.aspx?n=13832&sms=15813,會計報告,False,True
 https://www.guanyin-hro.tycg.gov.tw/News.aspx?n=13833&sms=15814,政策宣導,False,True
 https://www.guanyin-hro.tycg.gov.tw/News.aspx?n=13834&sms=15815,個人資料保護專區,False,True
@@ -59,13 +59,13 @@ https://www.guanyin-hro.tycg.gov.tw/cl.aspx?n=23024,安全及衛生防護專區,
 https://www.guanyin-hro.tycg.gov.tw/News.aspx?n=13835&sms=15816,性別主流化專區,False,True
 https://www.guanyin-hro.tycg.gov.tw/News_Video.aspx?n=13836&sms=15817,影音專區,False,True
 https://www.guanyin-hro.tycg.gov.tw/News.aspx?n=13837&sms=15818,文宣品,False,True
-https://www.guanyin-hro.tycg.gov.tw/Default.aspx,回首頁,True,True
-https://www.guanyin-hro.tycg.gov.tw/SiteMap.aspx,網站導覽,True,True
-https://tyhr.tycg.gov.tw/,English,True,False
-https://www.tycg.gov.tw/,桃園市政府,True,False
-https://www.tycg.gov.tw/cp.aspx?n=5845&s=1312&ccms_cs=1&state=1C5D152DDF4F3ED0,隱私權政策,True,False
-https://www.tycg.gov.tw/cp.aspx?n=5846&s=1313&ccms_cs=1&state=1C5D152DDF4F3ED0,網站安全政策,True,False
-https://www.tycg.gov.tw/cp.aspx?n=5847&s=1314&ccms_cs=1&state=1C5D152DDF4F3ED0,政府網站資料開放宣告,True,False
+https://www.guanyin-hro.tycg.gov.tw/Default.aspx,回首頁,False,True
+https://www.guanyin-hro.tycg.gov.tw/SiteMap.aspx,網站導覽,False,True
+https://tyhr.tycg.gov.tw/,English,False,False
+https://www.tycg.gov.tw/,桃園市政府,False,False
+https://www.tycg.gov.tw/cp.aspx?n=5845&s=1312&ccms_cs=1&state=1C5D152DDF4F3ED0,隱私權政策,False,False
+https://www.tycg.gov.tw/cp.aspx?n=5846&s=1313&ccms_cs=1&state=1C5D152DDF4F3ED0,網站安全政策,False,False
+https://www.tycg.gov.tw/cp.aspx?n=5847&s=1314&ccms_cs=1&state=1C5D152DDF4F3ED0,政府網站資料開放宣告,False,False
 https://www.guanyin-hro.tycg.gov.tw/cp.aspx?n=27099,藝文廊區展出申請及管理要點,False,True
 https://www.guanyin-hro.tycg.gov.tw/News.aspx?n=27109&sms=21107,線上藝文廊區,False,True
 https://www.guanyin-hro.tycg.gov.tw/News.aspx?n=13781&sms=15794,各里人口／戶數,False,True
@@ -82,7 +82,7 @@ https://www.guanyin-hro.tycg.gov.tw/News.aspx?n=13794&sms=15801,門牌相關法�
 https://www.guanyin-hro.tycg.gov.tw/cp.aspx?n=13795,門牌編釘流程圖及相關程序,False,True
 https://www.guanyin-hro.tycg.gov.tw/News.aspx?n=13796&sms=15802,道路命名,False,True
 https://www.guanyin-hro.tycg.gov.tw/News.aspx?n=13797&sms=15803,門牌相關公告,False,True
-https://www.guanyin-hro.tycg.gov.tw/News.aspx?n=13798&sms=15804,門牌整編異動資料,True,True
+https://www.guanyin-hro.tycg.gov.tw/News.aspx?n=13798&sms=15804,門牌整編異動資料,False,True
 https://addressrs.moi.gov.tw/address/index.cfm?city_id=68000,桃園市門牌電子地圖查詢系統,False,False
 https://www.ris.gov.tw/app/portal/3053,村里街路門牌查詢（門牌號碼請用全形輸入，如：觀和路２８號）,False,False
 http://www.post.gov.tw/post/internet/Postal/index.jsp?ID=208,郵遞區號查詢,False,False
@@ -96,13 +96,14 @@ https://www.facebook.com/share.php,Facebook,False,False
 https://www.plurk.com/,Plurk,False,False
 https://twitter.com/intent/tweet,Twitter,False,False
 https://line.naver.jp/R/msg/text/,Line,False,False
-https://www.guanyin-hro.tycg.gov.tw/,桃園市觀音區戶政事務所,True,True
-https://www.guanyin-hro.tycg.gov.tw/News_Video_Content.aspx?n=13836&s=1414816,【智慧好桃園  】 - 桃園市觀音區戶政事務所,True,True
-https://www.guanyin-hro.tycg.gov.tw/News_Content.aspx?n=13798&s=1395391,,True,True
-https://www.guanyin-hro.tycg.gov.tw/News_Link.aspx?n=13841&sms=15821,Banner輪播 - 桃園市觀音區戶政事務所,True,True
-https://www.guanyin-hro.tycg.gov.tw/ENews.aspx?n=13811&sms=17539&page=2&PageSize=20,線上申辦 - 觀音區戶政事務所- 桃園市政府,True,True
-https://www.google.com/search?client=ms-google-coop&q=%E9%96%80%E7%89%8C%E6%9F%A5%E8%A9%A2&cx=c71678936b2334dc2,搜尋 在 Google 上搜尋「 門牌查詢 」,True,False
-https://cse.google.com/?ref=b&hl=zh-TW,,True,False
+https://www.ris.gov.tw/app/portal/187,國民身分證專區-國民身分證相片規格,True,False
+https://www.ris.gov.tw/app/portal/765,國民身分證-國民身分證影像上傳,True,False
+https://ws.tycg.gov.tw/001/Upload/166/relpic/15791/5413/dbf288a3-f477-496e-b4b1-acb3706f7dcd.jpg,,False,False
+https://ws.tycg.gov.tw/001/Upload/166/relpic/15791/5413/0bcff6f9-8fa6-47be-b334-d2706d9a50f0.jpg,,False,False
+https://ws.tycg.gov.tw/001/Upload/166/relpic/15791/5413/81559ad0-aff2-4aa1-b19c-ab3725ac14df.jpg,,False,False
+https://ws.tycg.gov.tw/001/Upload/166/relpic/15791/5412/dfc3e0e1-67bd-4dcb-9c7c-cad008a4952c.jpg,,False,False
+https://ws.tycg.gov.tw/001/Upload/166/relpic/15791/5412/479af7f2-c283-4f38-9ada-cd8a4401fd35.jpg,,False,False
+https://ws.tycg.gov.tw/001/Upload/166/relpic/15791/5412/4ca421d0-9606-4f5a-a9c9-c69dd97140ff.jpg,,False,False
 https://www.gov.tw/,,False,False
 https://accessibility.moda.gov.tw/Applications/Detail?category=20240510102005,,False,False
 https://www.facebook.com/guaninhr3,觀音區戶政 粉絲頁,False,True

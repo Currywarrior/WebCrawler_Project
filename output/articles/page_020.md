@@ -4,7 +4,7 @@
 - 網站名稱：zh.wikipedia.org
 - 作者：維基媒體專案貢獻者
 - 發表日期：2011-02-24T03:26:25Z
-- 爬取時間：2026-10-29T16:06:35+08:00　取得方式：requests　正文定位：站點規則 #mw-content-text .mw-parser-output
+- 爬取時間：2026-11-05T16:36:30+08:00　取得方式：requests　正文定位：站點規則 #mw-content-text .mw-parser-output
 - 圖片：3 張
 
 ---

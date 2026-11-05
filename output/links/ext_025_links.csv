@@ -26,9 +26,9 @@ https://travel.tycg.gov.tw/ja/travel,人気観光スポット,True,False
 https://travel.tycg.gov.tw/ja/travel/attraction/2297,千郁休閒農場,False,False
 https://travel.tycg.gov.tw/ja/travel/attraction/2300,新屋濱海植物園,False,True
 https://travel.tycg.gov.tw/ja/travel/attraction/2291,新屋石滬故事館,False,True
-https://travel.tycg.gov.tw/ja/travel/attraction/2239,大園古亭海岸碉堡,False,True
-https://travel.tycg.gov.tw/ja/travel/attraction/2245,観音区多目的ホール (觀音區多功能場館),False,True
 https://travel.tycg.gov.tw/ja/travel/attraction/2244,營盤坑古道,False,False
+https://travel.tycg.gov.tw/ja/travel/attraction/2239,大園古亭海岸碉堡,False,True
+https://travel.tycg.gov.tw/ja/travel/attraction/2301,大園尖山考古展示館,False,True
 https://travel.tycg.gov.tw/ja/travel/plans,お任せパック,False,False
 https://travel.tycg.gov.tw/ja/multimedia/publication,出版物,False,False
 https://travel.tycg.gov.tw/ja/travel/useful-links,リンク,False,False
@@ -49,43 +49,52 @@ https://travel.tycg.gov.tw/id,Indonesia,False,False
 https://travel.tycg.gov.tw/th,ไทย,False,False
 https://travel.tycg.gov.tw/vi,Người việt nam,False,False
 https://travel.tycg.gov.tw/ja/search,全文検索,False,False
-"https://www.google.com/maps/place/25.047016954276657,121.0762345790863",地図,True,False
-https://travel.tycg.gov.tw/content/images/attractions/59742/480x360_attractions-image-a2zbkqjt90g9kf-ixbp5yg.jpg,夕陽とベニバナを眺め,True,False
-https://travel.tycg.gov.tw/content/images/attractions/59743/480x360_attractions-image-gazxezswtuqwymd7fhjkbg.jpg,観音浜海遊憩区,True,False
-https://travel.tycg.gov.tw/content/images/attractions/59744/480x360_attractions-image-mpsckks7gu-i99uuolde9q.jpg,旅の楽しみも倍増です。,True,False
-https://travel.tycg.gov.tw/content/images/attractions/59745/480x360_attractions-image-ydlpgzn3deiab3sxrl2-0w.jpg,SNS映えスポットとして人気で,True,False
-https://travel.tycg.gov.tw/content/images/attractions/59746/480x360_attractions-image-ohjnmv26zuajhowmsw5ujg.jpg,夕陽と風車を背景に告白タイム,True,False
-https://travel.tycg.gov.tw/content/images/attractions/59748/480x360_attractions-image-oeqqg9qt3eaj77ffd-zcyw.jpg,ドラマのロケ地としても何度も登場しています。,True,False
-https://travel.tycg.gov.tw/content/images/attractions/59749/480x360_attractions-image-mwnmbnjb3uug0li76hdk2q.jpg,海岸に風を受けて悠々と回る大風車,True,False
-https://travel.tycg.gov.tw/content/images/attractions/59750/480x360_attractions-image-9jxfkodrdkmg5xiqql7amw.jpg,観音海水浴場,True,False
-https://travel.tycg.gov.tw/content/images/attractions/59751/480x360_attractions-image-aznocxs4z0a8ghzystz9oq.jpg,観音溪のそばに環状遊歩道,True,False
-https://travel.tycg.gov.tw/content/images/attractions/59752/480x360_attractions-image-ymokw0kkn0cphupe3toysa.jpg,景観広場が新しく整備され,True,False
-https://travel.tycg.gov.tw/content/images/attractions/59753/480x360_attractions-image-vn_mldj5tkyl06cvd1d12w.jpg,地元文化を体験できる新たな選択肢です。,True,False
-https://travel.tycg.gov.tw/content/images/attractions/59754/480x360_attractions-image-urgftvitb0-0ei-g8z-8na.jpg,シンプルな柵がレジャーの雰囲気を盛り上げます。,True,False
-https://travel.tycg.gov.tw/content/images/attractions/59757/480x360_attractions-image-_avvewsjd0amoxz6zr_nrq.jpg,広場右側は跨橋出入口で,True,False
-https://travel.tycg.gov.tw/content/images/attractions/59758/480x360_attractions-image-eo3t2rmg20mdt5fhkczwpq.jpg,大風車,True,False
-https://travel.tycg.gov.tw/content/images/attractions/138/480x360_N20118916452.jpg,観景遊歩道に隠れた観音パスワード,True,False
-https://travel.tycg.gov.tw/content/images/attractions/139/480x360_IMG_0268.JPG,大型風車,True,False
-https://travel.tycg.gov.tw/content/images/attractions/3827/480x360_Filedata635487345713682624.jpg,武威溝水岸風景,True,True
-https://travel.tycg.gov.tw/content/images/attractions/3828/480x360_Filedata635487345744934252.jpg,むつごろう,True,False
-https://travel.tycg.gov.tw/content/images/attractions/3829/480x360_Filedata635487345779154808.jpg,マングローブ,True,False
-https://travel.tycg.gov.tw/content/images/attractions/3830/480x360_Filedata635487345811969005.jpg,三度り蟹,True,False
-https://travel.tycg.gov.tw/content/images/attractions/6689/480x360_Filedata635548679870914996.jpg,旧跡「白沙岬灯台」が眺められます。,True,True
-https://travel.tycg.gov.tw/content/images/attractions/6692/480x360_Filedata635548682480577855.jpg,海浜系オレンジPantone,True,False
-https://travel.tycg.gov.tw/content/images/attractions/6693/480x360_Filedata635548682512454466.jpg,インスタ映え度も急上昇。,True,False
-https://travel.tycg.gov.tw/content/images/attractions/6694/480x360_Filedata635548682543706039.jpg,旅の思い出に一際鮮やかな彩りを添えてくれるでしょう。,True,False
-https://travel.tycg.gov.tw/content/images/attractions/6695/480x360_Filedata635548682577457735.jpg,巨大な風車が並ぶ海岸へと進めば,True,False
-https://travel.tycg.gov.tw/content/images/attractions/59741/480x360_attractions-image-dm6e-quk60svgvw3is_pfa.jpg,マップ,True,False
-"https://maps.google.com/maps?daddr=25.047016954276657,121.0762345790863&hl=ja",お選びになった出発点に応じて適した交通手段を選択します,True,False
-https://www.facebook.com/sharer/sharer.php?u=https://travel.tycg.gov.tw/ja/travel/attraction/778,分享到 facebook,False,False
-http://service.weibo.com/share/share.php?url=https://travel.tycg.gov.tw/ja/travel/attraction/778&amp;title=観音海浜レジャーエリア (觀音濱海遊憩區)&amp;language=ja,分享到 Weibo,False,True
-http://line.naver.jp/R/msg/text/?観音海浜レジャーエリア (觀音濱海遊憩區)%20https://travel.tycg.gov.tw/ja/travel/attraction/778,分享到 line,False,True
-https://travel.tycg.gov.tw/ja/travel/attraction/768,前の,True,False
-https://travel.tycg.gov.tw/ja/travel/attraction/796,次の,True,False
-https://travel.tycg.gov.tw/ja/travel/attraction/1045,白沙岬灯塔(灯台)(白沙岬燈塔) 立入可能範囲は灯台内部と庭園施設。主灯台室は見学できません。 人氣 7511,True,True
-https://travel.tycg.gov.tw/ja/travel/attraction/2247,4.6 甘泉寺 木曜日：06:00 - 21:00 人氣 538,True,True
-https://travel.tycg.gov.tw/ja/travel/attraction/1201,2.6 中台環境資源教育センター(中台環境資源教育中心) 木曜日：09:00 - 12:00、13:30 - 17:00 人氣 5202,True,False
-https://travel.tycg.gov.tw/ja/travel/attraction/2250,4.1 観音区「白玉海岸」(觀音白玉海岸) 木曜日：00:00 - 23:59 人氣 365,True,True
+"https://www.google.com/maps/place/25.03709,121.08164",地図,True,False
+https://travel.tycg.gov.tw/content/images/attractions/111538/480x360_attractions-image-vycy4rfaieymidkotojfpq.jpg,甘泉寺,True,True
+https://travel.tycg.gov.tw/content/images/attractions/111539/480x360_attractions-image-tmh0cb7blukvim4vsxeyrg.jpg,甘泉寺,True,True
+https://travel.tycg.gov.tw/content/images/attractions/111540/480x360_attractions-image-nfhrrirhweahse47cnawfa.jpg,甘泉寺,True,True
+https://travel.tycg.gov.tw/content/images/attractions/111541/480x360_attractions-image-v89n4lvdskck-mjmqujdxq.jpg,甘泉寺,True,True
+https://travel.tycg.gov.tw/content/images/attractions/111542/480x360_attractions-image-3bfzhybyneo1oltnllcgea.jpg,甘泉寺,True,True
+https://travel.tycg.gov.tw/content/images/attractions/111543/480x360_attractions-image-lutkqhsaiu6olsjj9dcapg.jpg,甘泉寺,True,True
+https://travel.tycg.gov.tw/content/images/attractions/111544/480x360_attractions-image-3gv1rgji_ukipr5s-loala.jpg,甘泉寺,True,True
+https://travel.tycg.gov.tw/content/images/attractions/111545/480x360_attractions-image-3n41qxsgbue5rw1zflgkdg.jpg,甘泉寺,True,True
+https://travel.tycg.gov.tw/content/images/attractions/111537/480x360_attractions-image-sjvkrmgfauw7v2sqvbapsg.jpg,甘泉寺,True,True
+https://www.facebook.com/p/%E7%9F%B3%E8%A7%80%E9%9F%B3%E7%94%98%E6%B3%89%E5%AF%BA-61556538256486/,Facebook,True,True
+"https://maps.google.com/maps?daddr=25.03709,121.08164&hl=ja",お選びになった出発点に応じて適した交通手段を選択します,True,False
+https://www.instagram.com/p/C9cboh7tJgi,,False,False
+https://www.instagram.com/explore/tags/桃園旅遊去,#桃園旅遊去,False,False
+https://www.instagram.com/explore/tags/珍珠海岸,#珍珠海岸,False,False
+https://www.instagram.com/explore/tags/觀音濱海,#觀音濱海,False,True
+https://www.instagram.com/explore/tags/甘泉寺,#甘泉寺,False,True
+https://www.instagram.com/explore/tags/甘泉井,#甘泉井,False,False
+https://www.instagram.com/explore/tags/白沙岬燈塔,#白沙岬燈塔,False,True
+https://www.instagram.com/explore/tags/草漯沙丘觀音展示館,#草漯沙丘觀音展示館,False,True
+https://www.instagram.com/explore/tags/觀音濱海休憩區,#觀音濱海休憩區,False,True
+https://www.instagram.com/explore/tags/免費沖洗區,#免費沖洗區,False,False
+https://www.instagram.com/explore/tags/桃園旅遊,#桃園旅遊,False,False
+https://www.instagram.com/explore/tags/樂遊桃園,#樂遊桃園,False,False
+https://www.instagram.com/explore/tags/taoyuantravel,#taoyuantravel,False,False
+https://www.instagram.com/explore/tags/親子旅遊,#親子旅遊,False,False
+https://www.instagram.com/explore/tags/打卡景點,#打卡景點,False,False
+https://www.instagram.com/explore/tags/觀音景點,#觀音景點,False,True
+https://www.instagram.com/explore/tags/戲水,#戲水,False,False
+https://www.instagram.com/explore/tags/guanyin,#guanyin,False,True
+https://www.instagram.com/explore/tags/coast,#coast,False,False
+https://www.instagram.com/explore/tags/beach,#beach,False,False
+https://www.instagram.com/explore/tags/taoyuancity,#taoyuancity,False,False
+https://www.instagram.com/explore/tags/planyourtrip,#planyourtrip,False,False
+https://www.instagram.com/explore/tags/twwheretogo,#twwheretogo,False,False
+https://www.instagram.com/explore/tags/taiwantrip,#taiwantrip,False,False
+https://www.instagram.com/explore/tags/picoftheday,#picoftheday,False,False
+https://www.instagram.com/explore/tags/fyp,#fyp,False,False
+https://www.facebook.com/sharer/sharer.php?u=https://travel.tycg.gov.tw/ja/travel/attraction/2247,分享到 facebook,False,False
+http://service.weibo.com/share/share.php?url=https://travel.tycg.gov.tw/ja/travel/attraction/2247&amp;title=甘泉寺&amp;language=ja,分享到 Weibo,False,True
+http://line.naver.jp/R/msg/text/?甘泉寺%20https://travel.tycg.gov.tw/ja/travel/attraction/2247,分享到 line,False,True
+https://travel.tycg.gov.tw/ja/travel/attraction/2199,前の,True,False
+https://travel.tycg.gov.tw/ja/travel/attraction/2250,次の,True,False
+https://travel.tycg.gov.tw/ja/travel/attraction/1045,白沙岬灯塔(灯台)(白沙岬燈塔) 立入可能範囲は灯台内部と庭園施設。主灯台室は見学できません。 人氣 7776,True,True
+https://travel.tycg.gov.tw/ja/travel/attraction/778,4.4 観音海浜レジャーエリア (觀音濱海遊憩區) 木曜日：24時間昼夜営業 人氣 11108,True,True
+https://travel.tycg.gov.tw/ja/travel/attraction/1201,2.6 中台環境資源教育センター(中台環境資源教育中心) 木曜日：09:00 - 12:00、13:30 - 17:00 人氣 5217,True,False
 https://www.facebook.com/traveltaoyuan,Facebook,False,False
 https://www.instagram.com/taoyuantravel/,Instagram,False,False
 https://www.youtube.com/channel/UCARB8y6PuoOBjZXJKIG-LDw,YouTube,False,False
