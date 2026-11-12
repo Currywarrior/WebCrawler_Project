@@ -1,6 +1,116 @@
 # 從網頁到知識庫：觀音地方知識多媒體爬蟲
 
-以「桃園市觀音區地方知識」為主題，把教師提供的 31 個網址（28 個網頁、3 部 YouTube 影片）自動爬取、去雜訊、擷取圖片與影片字幕／代表畫面，整理成可追溯來源的結構化資料（`output/index.jsonl`），並做相似文章偵測、主題分類、關鍵字與人工查證。
+資料庫設計課第 9 組作業。主題是「桃園市觀音區地方知識」，我們寫了一支爬蟲，把網頁和 YouTube 影片自動抓回來，去掉廣告、選單這類雜訊，留下正文、圖片、字幕和代表畫面，最後整理成一份每筆都能追回原始網址的結構化資料 `output/index.jsonl`，再做相似文章偵測、主題分類、關鍵字和人工查證。
+
+## 成果一覽
+
+| 項目 | 結果 |
+|---|---|
+| 種子網址 | 37 個（老師指定 31 個，加上我們自行擴充 6 個），全部取得 |
+| 延伸探索 | 從種子頁往外走 1 層，共 30 頁，成功 29 頁、失敗 1 頁（對方網站回 403 拒絕） |
+| 結構化資料 | `index.jsonl` 共 67 筆 |
+| 圖片 | 保留 410 張，排除 432 張，每張被排除的圖都有記錄原因 |
+| 影片 | 3 部，2 部有字幕（共 1,011 段，每段都有時間戳），每部挑 5 張代表畫面 |
+| 超連結 | 共 9,718 條，其中 1,403 條判定和觀音有關 |
+
+## 完整流程
+
+整個程式像一條生產線，一個網址進去，依序經過下面六站，最後變成一筆乾淨的資料。
+
+```
+urls.csv -> 1.讀網址去重 -> 2.抓網頁 -> 3.清理正文 -> 4.挑圖片 -> 5.存成結構化資料 -> 6.分析與查證
+                               |
+                               +-> YouTube 影片走另一條路：抓資料、字幕、代表畫面
+```
+
+### 1. 讀網址、去重
+
+程式先讀 `urls.csv`。同一個網頁常常有好幾種網址寫法，例如後面多帶 `?utm_source=facebook` 這類追蹤參數，所以先把這些參數拿掉，網址相同的只處理一次。接著看網域分流：`youtube.com` 走影片流程，其他都走網頁流程。
+
+### 2. 抓網頁（`crawler/fetch.py`）
+
+抓網頁前，先讀該網站的 `robots.txt`，也就是網站寫給爬蟲看的規則，禁止抓的頁面就不抓。同一個網站每次請求至少間隔 1 秒，避免造成對方負擔。
+
+抓取時，一般網頁直接用 `requests` 送出請求、拿回 HTML。下面兩種情況會改用 Playwright，也就是用程式開一個真的 Chrome 瀏覽器：
+
+- 有些網站是前端渲染，內容要等瀏覽器執行 JavaScript 才會出現。像桃園觀光導覽網，直接抓只拿到不到 200 字的空殼。
+- 有三個政府網站的 SSL 憑證鏈不完整，瀏覽器開得了，Python 卻驗證失敗。
+
+用瀏覽器時，程式還會一段一段往下捲動，讓需要捲到才載入的圖片（lazy loading）都載出來。
+
+真的拿不到的頁面，例如對方明確回 403 拒絕自動化存取，我們不繞過，只在 `output/crawl_report.csv` 照實記下失敗原因。
+
+### 3. 清理正文（`crawler/extract.py`）
+
+一個網頁裡真正的文章常常只佔一小部分，其他是選單、廣告、分享按鈕、推薦文章。我們用 BeautifulSoup 解析 HTML，分三層清理：
+
+1. **整類刪除**：`script`、`style`、`nav`、`footer`、`header`、`iframe` 這類標籤本來就不是正文，直接刪掉。
+2. **看名字判斷**：網頁元素的 class 和 id 常常會透露用途，名字裡有 `ad`、`share`、`cookie`、`popup`、`sidebar`、`related` 這些詞的區塊，就當成雜訊刪掉。為了避免誤刪，如果一個區塊包含全頁 40% 以上的文字，就算名字可疑也保留，因為那多半就是正文本身。
+3. **找出正文**：常見網站（維基百科、Yahoo、痞客邦、公視等）有寫好的對應規則。沒有規則的網站，就幫每個區塊打分數：段落文字越多、連結越少，分數就越高，分數最高的就當作正文。
+
+清完之後轉成 Markdown，保留標題層級、段落、列表、表格，圖片也放在原文的位置。作者和發布日期從網頁的 `meta` 標籤和 JSON-LD 讀出來，另外把每頁的所有超連結存成一份 CSV。
+
+### 4. 挑圖片
+
+圖片只從正文裡找，所以側欄和頁首的 Logo 一開始就不會被選進來。接著用下面的規則過濾：
+
+- 網址或名字裡有 `logo`、`icon`、`banner`、`qrcode` 的排除
+- 太小的排除，例如 1x1 的追蹤像素和小圖示
+- 長寬比大於 4 的排除，這種多半是橫幅廣告
+- 每頁最多留 15 張
+
+去重分兩種。同一張圖如果檔案完全一樣，就用 SHA-1 雜湊（檔案的指紋）比對出來。如果是同一張照片但壓縮過或改過尺寸，檔案已經不一樣了，就用 pHash（感知雜湊）比對看起來像不像。重複的圖片不會再下載一次，而是直接指回已經存過的那個檔案。
+
+### 5. 影片（`crawler/video.py`）
+
+影片本體完全不下載，只拿三樣東西：
+
+- **基本資料**：用 `yt-dlp` 的「只讀資料、不下載」模式，取得標題、頻道、上傳日期、長度和說明欄。
+- **字幕**：用 `youtube-transcript-api` 取得平台公開的字幕，人工字幕優先，再來才是自動字幕。每一段字幕都保留時間戳。
+- **代表畫面**：使用 YouTube 拖曳進度條時出現的預覽縮圖。程式把影片平均切成 5 段，每段挑最清楚的一格。清晰度用 OpenCV 的 Laplacian 變異數計算，畫面越清楚，數值越高。
+
+video_003 這部影片本身沒有字幕，我們也沒有取得音訊的授權，所以沒有做語音辨識，改成人工描述那 5 張畫面。
+
+### 6. 延伸探索與停止規則（`crawler/crawler.py`）
+
+網頁之間靠超連結互相串起來。我們的種子頁平均每頁有 124 條連結，往外走一層就有約 4,000 頁，走兩層約 52 萬頁，走三層超過 6,000 萬頁，理論上永遠爬不完。所以我們先訂好停在哪裡：
+
+| 規則 | 內容 |
+|---|---|
+| 深度 | 從種子頁只往外走 1 層 |
+| 數量 | 每個種子最多 3 條連結，總共最多 30 頁 |
+| 範圍 | 連結文字要出現觀音地名（共 29 個），而且只限同一個網站、維基百科或政府網站；標籤頁、分類頁、搜尋頁、PDF、圖檔都跳過 |
+| 去重 | 網址去掉追蹤參數後比對，圖片用 SHA-1 和 pHash 比對 |
+| 禮貌 | 遵守 robots.txt，同一個網站每次請求間隔 1 秒 |
+
+第一輪沒有擋標籤頁和搜尋頁，結果浪費了 6 個名額。加上排除規則之後，延伸頁的成功數從 25 頁提高到 29 頁。
+
+### 7. 存成結構化資料
+
+每一筆資料都寫成 `output/index.jsonl` 裡的一行 JSON，包含作業要求的欄位：`id`、`type`、`title`、`source_url`、`source_name`、`content`、`images`、`links`、`timestamps`、`crawl_status`、`crawled_at`，另外加上分析結果欄位 `category`、`keywords`、`similar_docs`、`fact_checks`。每筆資料都能從 `source_url` 追回原始網頁，每張圖片也都記錄了原圖網址。
+
+### 8. 分析與查證（`crawler/analyze.py`）
+
+- **相似文章**：把每篇文章切成 2 到 3 個字的片段，用 TF-IDF 轉成向量（常見字權重低、少見字權重高），再用餘弦相似度比較兩篇文章有多像。中文用這種切法，不必先斷詞也能比對。相似度 0.6 以上判為高度相似。我們因此發現 3 組重複，都是維基百科同一篇文章的不同網址寫法（`/zh/`、`/wiki/`、`/zh-tw/`），網址去重沒抓到，靠內容比對才抓出來。
+- **主題分類**：分成 6 類，分別是自然生態、歷史信仰、產業能源、農業飲食、觀光休閒、海洋與當代議題。每類準備一組關鍵詞，算哪一類的詞出現最多，標題裡的詞算 5 倍分數。
+- **關鍵字**：用 jieba 斷詞後抽出關鍵字，每篇取 5 個。先把「白沙岬燈塔」「觀新藻礁」這類地名加進字典，避免被切碎。
+- **人工查證**：挑 3 筆網站上的說法，拿官方資料比對。例如有部落格寫甘泉寺建於乾隆年間，但戶政所和寺方官網都寫咸豐年間，就判定為「與官方來源不符」。查不到的寫「待查」，不用推測補成事實。
+
+## 用到的技術
+
+| 技術 | 用途 | 一句話說明 |
+|---|---|---|
+| Python 3.14 | 全部程式 | |
+| requests | 抓網頁 | 對網站送出 HTTP 請求，拿回 HTML |
+| Playwright | 抓前端渲染的網頁、截圖 | 用程式控制一個真的瀏覽器 |
+| BeautifulSoup + lxml | 解析 HTML | 把 HTML 變成樹狀結構，方便找元素、刪元素 |
+| yt-dlp | 影片基本資料 | 讀取 YouTube 影片資訊，不下載影片 |
+| youtube-transcript-api | 影片字幕 | 取得 YouTube 公開字幕和時間戳 |
+| Pillow + ImageHash | 圖片尺寸、圖片去重 | 讀取圖片大小、計算 pHash |
+| OpenCV + NumPy | 挑代表畫面 | 計算畫面清晰度 |
+| scikit-learn | 相似文章 | TF-IDF 向量和餘弦相似度 |
+| jieba | 中文斷詞、關鍵字 | 把中文句子切成詞 |
+| JSON Lines | 結構化資料格式 | 一行一筆 JSON，方便逐筆讀取和追加 |
 
 ## 環境安裝
 
@@ -8,50 +118,49 @@
 cd WebCrawler_Project
 python -m venv .venv
 .venv\Scripts\python -m pip install -r requirements.txt
-.venv\Scripts\python -m playwright install chromium   # 爬 JS 渲染網站與截圖用
+.venv\Scripts\python -m playwright install chromium
 ```
 
 ## 執行方式
 
 ```powershell
-# 1. 爬全部網址 + 一層延伸探索（約 15~20 分鐘，有每站 1 秒限速）
+# 1. 全部重爬：37 個種子加上延伸探索（約 20 分鐘）
 .venv\Scripts\python crawler\crawler.py
 
-# 2. 現場展示：只重跑 urls.csv 第 5、26 筆（編號固定，結果合併回 index.jsonl）
+# 2. 只重跑 urls.csv 的第 5、26 筆（現場展示用，結果會合併回 index.jsonl）
 .venv\Scripts\python crawler\crawler.py --only 5,26
 
-# 3. 現場展示：老師臨時給任一網址（網頁或 YouTube 都可），輸出到 output\demo\
+# 3. 臨時給一個新網址，網頁或 YouTube 都可以，結果輸出到 output\demo\
 .venv\Scripts\python crawler\crawler.py --url "https://zh.wikipedia.org/wiki/白沙岬燈塔"
 
-# 4. 任務 6：相似文章、主題分類、關鍵字，並把查證結果併回 index.jsonl
+# 4. 相似文章、分類、關鍵字，並把查證結果併回 index.jsonl
 .venv\Scripts\python crawler\analyze.py
 
-# 5. 任務 2：產生原始網頁 vs 清理結果的對照截圖
-.venv\Scripts\python crawler\screenshots.py page_001 page_005 page_019 page_023
+# 5. 產生「原始網頁 vs 清理結果」的對照截圖
+.venv\Scripts\python crawler\screenshots.py page_001 page_019 page_022 page_023
 ```
 
-## 系統功能與程式對應
+注意：全部重爬會覆蓋 video_003 的人工畫面描述，重爬後要從 git 歷史補回來。
 
-| 程式 | 負責 |
-|---|---|
-| `crawler/fetch.py` | 讀 robots.txt、每站限速；requests 優先，遇 SSL 憑證鏈錯誤或 JS 渲染站改用 Playwright（Chromium），並分段捲動觸發 lazy loading |
-| `crawler/extract.py` | 中繼資料（標題、站名、作者、日期，含 JSON-LD）、全頁連結清單、三層雜訊清除、正文定位、轉 Markdown、圖片候選與過濾規則 |
-| `crawler/video.py` | yt-dlp 只取中繼資料（不下載影片）、youtube-transcript-api 取官方字幕、storyboard 代表畫面挑選 |
-| `crawler/crawler.py` | 主流程：網址去重、網頁／影片分流、圖片下載與去重、延伸探索、輸出 index.jsonl 與 crawl_report.csv |
-| `crawler/analyze.py` | TF-IDF 相似度、主題分類、jieba 關鍵字、併入查證結果 |
-| `crawler/screenshots.py` | 任務 2 對照截圖 |
-
-## 輸出檔案
+## 資料夾結構
 
 | 路徑 | 內容 |
 |---|---|
-| `output/index.jsonl` | 每行一筆結構化資料：id、type、title、source_url、source_name、content、images、links、timestamps、crawl_status、crawled_at，以及 category、keywords、similar_docs、fact_checks |
-| `output/crawl_report.csv` | 每個網址（含延伸連結）的取得方式、HTTP 狀態、成功／失敗／無法存取與原因 |
-| `output/articles/page_XXX.md` | 清理後可直接閱讀的正文，圖片插在原文位置並標來源網址 |
-| `output/images/page_XXX_image_NN.jpg` | 文章內圖片；對應關係與被排除的圖片及原因記在 index.jsonl |
-| `output/links/page_XXX_links.csv` | 該頁所有超連結，標記是否在正文內、是否與觀音主題相關 |
-| `output/videos/video_XXX.md`、`video_XXX_frames/` | 影片基本資料、帶時間戳的逐字稿、代表畫面 |
-| `output/similar_pairs.csv`、`classification.csv`、`fact_check.json` | 任務 6 成果 |
-| `report/report.md` | 實作報告（含失敗網址說明） |
+| `urls.csv` | 種子網址清單，`no` 是編號 |
+| `crawler/` | 全部程式，各支的分工見上面的流程 |
+| `output/index.jsonl` | 最終的結構化資料，一行一筆 |
+| `output/crawl_report.csv` | 每個網址的取得方式、HTTP 狀態、成功或失敗原因 |
+| `output/articles/` | 清理後的文章 Markdown，圖片插在原文位置 |
+| `output/images/` | 文章圖片 |
+| `output/links/` | 每頁全部超連結，標記是否在正文內、是否和觀音相關 |
+| `output/videos/` | 影片資料、帶時間戳的逐字稿、代表畫面 |
+| `output/similar_pairs.csv`、`classification.csv`、`fact_check.json` | 分析與查證結果 |
+| `report/report.md` | 實作報告，包含失敗網址的說明 |
 
-編號規則：`urls.csv` 中的網頁依序為 `page_001`～`page_028`、影片為 `video_001`～`video_003`，延伸探索的頁面為 `ext_001` 起；`crawl_report.csv` 的 `no` 欄位對回 `urls.csv` 的編號。
+編號規則：老師指定的網頁是 `page_001` 到 `page_028`，影片是 `video_001` 到 `video_003`，我們自行擴充的是 `page_029` 到 `page_034`，延伸探索的頁面是 `ext_001` 到 `ext_030`。
+
+## 已知限制
+
+- 維基百科同一篇文章有好幾種網址寫法，網址去重認不出來，所以 ext_020、ext_028、ext_030 和種子頁內容重複。這些重複已經由相似文章偵測抓出來，記錄在 `similar_pairs.csv`。
+- ext_027 是宿霧語的維基條目，由機器人自動產生，內容價值很低。
+- 市府有一頁回 403 拒絕存取，我們沒有繞過。
