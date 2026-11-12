@@ -169,6 +169,83 @@ python -m venv .venv
 > [!CAUTION]
 > **全部重新抓會把 video_003 的畫面描述洗掉**，抓完要從 git 歷史紀錄把它補回來。
 
+## 上台操作展示流程
+
+老師會現場抽網址，要我們當場重跑，證明資料真的是程式抓的。整個展示大約 3 分鐘，照下面五步做。
+
+```mermaid
+flowchart LR
+    S0["準備"]:::input --> S1["① 重跑抽到的網址"]:::step
+    S1 --> S2["② 打開清好的文章"]:::step
+    S2 --> S3["③ 看影片結果"]:::video
+    S3 --> S4["④ 看整理好的資料"]:::output
+    S4 --> S5["⑤ 抓一個新網址"]:::output
+
+    classDef input fill:#FDE68A,stroke:#B45309,color:#000
+    classDef step fill:#BFDBFE,stroke:#1D4ED8,color:#000
+    classDef video fill:#DDD6FE,stroke:#6D28D9,color:#000
+    classDef output fill:#BBF7D0,stroke:#15803D,color:#000
+```
+
+> [!IMPORTANT]
+> **上台前先準備好**
+> 1. 確認電腦有網路
+> 2. 開好 VS Code，打開這個資料夾
+> 3. 開好 PowerShell，先切到專案資料夾：`cd D:\CS_Work\WebCrawler_Project`
+> 4. 先自己完整跑過一次，確定不會出錯
+
+### ① 重跑老師抽到的網址
+
+假設老師抽第 5 個（白沙岬燈塔的部落格文章）和第 26 個（YouTube 影片）：
+
+```powershell
+.venv\Scripts\python crawler\crawler.py --only 5,26
+```
+
+畫面會一行一行印出正在抓哪個網址，每個後面都會出現 `成功`。這時可以邊等邊說：「程式會先讀網站的規定，每頁間隔 1 秒，不會一直狂抓。」
+
+### ② 打開清好的文章
+
+在 VS Code 打開 `output/articles/page_005.md`，按 `Ctrl+Shift+V` 切到預覽模式，讓老師看三件事：
+
+| 指給老師看 | 要說的話 |
+|---|---|
+| 最上面的標題、網址、作者、日期 | 「每一篇都能追回原本的網址。」 |
+| 正文 | 「原本網頁上的廣告、選單、分享按鈕都刪掉了，只留文章。」 |
+| 文章中間的照片 | 「照片放在原本的位置，底下寫著原圖網址。」 |
+
+如果老師想比較，可以在瀏覽器打開原始網址，兩邊並排看差多少。
+
+### ③ 看影片結果
+
+打開 `output/videos/video_001.md`，往下捲到字幕：
+
+- 「每一句字幕前面都有時間，例如 `[00:01:23]`，可以對回影片第幾秒。」
+- 再打開 `output/videos/video_001_frames/` 資料夾：「這是程式挑出來的 5 張畫面，檔名後面的數字就是在影片的第幾秒。」
+
+### ④ 看整理好的資料
+
+打開 `output/crawl_report.csv`：「每個網址有沒有抓到、用什麼方法抓、沒抓到的原因，都記在這裡。」
+
+再打開 `output/index.jsonl`，按 `Ctrl+F` 搜尋 `page_005`：「這是最後整理好的資料，一行一筆，裡面有標題、網址、正文、照片、連結、抓取時間，資料庫可以直接匯入。」
+
+### ⑤ 抓一個新網址（老師沒指定也可以主動展示）
+
+如果老師給一個清單外的網址，就把它貼進引號裡：
+
+```powershell
+.venv\Scripts\python crawler\crawler.py --url "https://zh.wikipedia.org/wiki/白沙岬燈塔"
+```
+
+結果會放在 `output/demo/articles/demo_page_001.md`，不會蓋掉原本的資料。
+
+> [!WARNING]
+> **不要用「草漯沙丘」的維基頁面示範**，那個條目不存在，會抓到錯誤頁。想用維基示範的話，用「白沙岬燈塔」或「草漯」。
+
+> [!TIP]
+> **如果現場抓失敗怎麼辦？**
+> 不要慌，打開 `output/crawl_report.csv` 看 `reason` 那一欄，照著念出失敗原因。例如對方網站拒絕程式進去（403），就說：「對方網站不讓自動程式進去，我們不硬闖，只記錄原因。」**能說明失敗原因，本身也是評分重點。**
+
 ## 檔案放在哪裡
 
 | 位置 | 裡面是什麼 |
