@@ -1,0 +1,4 @@
+enabled,provider,language,endpoint,query,bbox,limit,note
+1,wikipedia,zh,,{topic},"24.96,121.00,25.10,121.18",20,MediaWiki 公開搜尋 API；只回傳文章頁
+1,commons,,,Guanyin Taoyuan,"24.96,121.00,25.10,121.18",15,Wikimedia Commons 類別搜尋；可回溯圖片授權頁
+1,openstreetmap,,,,"24.96,121.00,25.10,121.18",25,Overpass 公開資料；找有名稱的 POI

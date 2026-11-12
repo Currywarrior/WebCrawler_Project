@@ -1,4 +1,6 @@
-# 觀音區維基百科爬蟲範例
+# 觀音區維基百科爬蟲範例（舊版）
+
+> 這是早期的單檔範例與 vendor 備份。正式流程請回到上一層執行 `crawler/crawler.py`；來源擴充、API 發現器與相關資料輸出都已整合在上一層的 `discovery_sources.csv`、`sources_extra.csv` 與 `crawler/discovery.py`。
 
 來源清單 `urls.csv` 已匯入來源文件中的 31 個網址。爬蟲透過 MediaWiki API 擷取維基百科頁面，對一般網站擷取公開 HTML 文字、連結和圖片候選；YouTube 讀取公開標題、頻道與字幕，不下載影片。字幕先嘗試播放器頁面的公開字幕軌道；若直接端點被限制，改用專案內 `vendor/yt-dlp` 的 Android 公開播放器客戶端讀取字幕。圖片先依檔名、尺寸與長寬比初篩；一般網站每頁最多下載 8 張，篩選結果仍應人工確認。
 

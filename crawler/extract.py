@@ -6,7 +6,8 @@ from urllib.parse import urljoin, urlparse, unquote
 from bs4 import BeautifulSoup, Comment, NavigableString, Tag
 
 # 觀音主題關鍵字：用來判斷延伸連結是否相關
-TOPIC_WORDS = ["觀音", "guanyin", "kuanyin", "白沙岬", "甘泉寺", "石觀音", "藻礁", "觀新", "草漯",
+TOPIC_WORDS = ["觀音", "桃園", "guanyin", "kuanyin", "白沙岬", "甘泉寺", "石觀音", "藻礁", "觀新",
+               "藻礁生態系", "草漯",
                "蓮花", "大潭", "大堀溪", "觀音溪", "樹林", "保障", "新坡", "崙坪", "白千層", "富林",
                "塔腳", "大園", "新屋", "海客", "石門水庫", "領海基點", "武威", "坑尾", "保生"]
 

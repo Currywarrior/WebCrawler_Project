@@ -129,3 +129,27 @@
 ```
 
 執行後即時顯示「原始網址 → 取得方式 → 狀態」，結果寫入 `output/articles/`、`output/images/`、`output/videos/` 與 `index.jsonl`，可直接打開 Markdown 對照原網頁。注意：video_003 的人工畫面描述是爬取後另外補上的，若重新爬取該影片需再補一次。
+
+## 九、超過原始清單的來源擴充
+
+原本流程以 `urls.csv` 的教師指定網址為種子，再從正文連結做深度 1 延伸。為避免資料量被固定清單限制，新增 `crawler/discovery.py` 與 `discovery_sources.csv`：
+
+| Provider | 方法 | 產出 |
+|---|---|---|
+| Wikipedia | MediaWiki `list=search`，以 `--topic` 查詢 | 可直接爬取的文章 URL 與搜尋摘要 |
+| Wikimedia Commons | namespace 6 檔案搜尋 | 檔案頁 URL、縮圖、尺寸、作者與授權短名 |
+| OpenStreetMap | Overpass `nwr["name"]` bbox 查詢 | POI URL、名稱、座標、完整 tags |
+| Sitemap | 公開 XML sitemap | 沒有搜尋 API 的網站頁面 URL |
+| Open-Meteo | 觀音座標的公開 forecast API | 帶取得時間與單位的天氣快照 |
+
+執行方式：
+
+```powershell
+# 原始 31 筆 + 5 筆策展來源
+.venv\Scripts\python crawler\crawler.py --include-extra
+
+# 原始來源 + API 發現的新網址，最多 30 筆
+.venv\Scripts\python crawler\crawler.py --discover --topic "觀音 桃園" --max-discovered 30
+```
+
+`--discover` 會先產生 `output/discovered_sources.csv` 與 `output/related_data.jsonl`，再把去重後的發現網址交給既有 requests／Playwright、robots、限速、正文與圖片流程。新紀錄在 `index.jsonl` 和 `crawl_report.csv` 以 `source_kind=discovered`、`discovery_provider` 標示來源。要加入其他網站，只需在 `discovery_sources.csv` 新增設定列；要加入新的 API 類型，依 README 的 provider 介面新增一個函式與分支即可，無須改動文章解析器。

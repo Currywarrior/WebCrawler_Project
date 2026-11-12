@@ -2,6 +2,8 @@
 
 用法：
   python crawler/crawler.py                 # 爬 urls.csv 全部網址 + 一層延伸探索
+  python crawler/crawler.py --include-extra # 加入 sources_extra.csv 的策展來源
+  python crawler/crawler.py --discover      # 用 discovery_sources.csv 找新網站與相關資料
   python crawler/crawler.py --only 5,26     # 只重跑 urls.csv 第 5、26 筆（現場展示用）
   python crawler/crawler.py --url <網址>    # 臨時爬任一網址，輸出到 output/demo/
 """
@@ -22,6 +24,7 @@ sys.path.insert(0, os.path.dirname(__file__))
 import extract  # noqa: E402
 import fetch  # noqa: E402
 import video  # noqa: E402
+import discovery  # noqa: E402
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 OUT = os.path.join(ROOT, "output")
@@ -29,14 +32,15 @@ OUT = os.path.join(ROOT, "output")
 # 延伸探索限制：深度 1、每個種子最多 3 個相關連結、全部最多 30 頁、只限下列站點範圍
 EXT_PER_SEED = 3
 EXT_TOTAL = 30
-EXT_DOMAINS = ("wikipedia.org", "gov.tw", "travel.tycg.gov.tw", "culture.tw")
+EXT_DOMAINS = ("wikipedia.org", "wikivoyage.org", "wikimedia.org", "openstreetmap.org",
+               "gov.tw", "travel.tycg.gov.tw", "culture.tw")
 SKIP_EXT = (".pdf", ".jpg", ".jpeg", ".png", ".gif", ".zip", ".doc", ".docx", ".xls", ".mp4")
 MAX_IMAGES = 15
 MIN_SIDE = 150
 
 REPORT_FIELDS = ["no", "id", "type", "depth", "parent_id", "url", "final_url", "method",
                  "http_status", "crawl_status", "reason", "title", "text_chars", "n_images",
-                 "n_links", "crawled_at"]
+                 "n_links", "source_kind", "discovery_provider", "source_note", "crawled_at"]
 
 _img_hashes = {}  # sha1 / phash → 已存檔名，跨頁去重
 
@@ -239,11 +243,27 @@ def pick_extensions(doc, seen):
     return out
 
 
+def load_rows(path):
+    """讀取來源 CSV；欄位可包含 no、url、note、source_kind。"""
+    with open(path, encoding="utf-8-sig", newline="") as f:
+        return [r for r in csv.DictReader(f) if r.get("url", "").strip()]
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--only", help="只跑 urls.csv 中的這些編號，例如 5,26")
     ap.add_argument("--url", help="臨時爬一個網址（展示用），輸出到 output/demo/")
     ap.add_argument("--no-extend", action="store_true", help="不做延伸探索")
+    ap.add_argument("--include-extra", action="store_true",
+                    help="加入 sources_extra.csv 的策展來源（目前 5 筆）")
+    ap.add_argument("--discover", action="store_true",
+                    help="透過 discovery_sources.csv 找 Wikipedia、Commons、OSM 等新來源")
+    ap.add_argument("--discover-config", default="discovery_sources.csv",
+                    help="來源發現設定檔（相對於專案根目錄）")
+    ap.add_argument("--max-discovered", type=int, default=30,
+                    help="本次最多加入的發現網址數")
+    ap.add_argument("--topic", default="觀音 桃園",
+                    help="發現器的主題查詢字串")
     a = ap.parse_args()
 
     outdir = os.path.join(OUT, "demo") if a.url else OUT
@@ -253,8 +273,25 @@ def main():
     if a.url:
         rows = [{"no": "demo", "url": a.url}]
     else:
-        with open(os.path.join(ROOT, "urls.csv"), encoding="utf-8") as f:
-            rows = list(csv.DictReader(f))
+        rows = load_rows(os.path.join(ROOT, "urls.csv"))
+        if a.include_extra:
+            extra_path = os.path.join(ROOT, "sources_extra.csv")
+            rows.extend(load_rows(extra_path) if os.path.exists(extra_path) else [])
+        if a.discover:
+            config = a.discover_config
+            if not os.path.isabs(config):
+                config = os.path.join(ROOT, config)
+            discovered, related = discovery.discover_from_config(
+                config, a.topic, max(1, a.max_discovered))
+            weather = discovery.fetch_open_meteo(25.03, 121.10)
+            discovery.write_discovery_outputs(OUT, discovered, related, weather)
+            for i, found in enumerate(discovered[:max(0, a.max_discovered)], 1):
+                rows.append({"no": f"D{i:03d}", "url": found["url"],
+                             "note": found.get("title", ""),
+                             "source_kind": found.get("kind", "discovered"),
+                             "provider": found.get("provider", "")})
+            print(f"發現器找到 {min(len(discovered), max(0, a.max_discovered))} 個新網址；"
+                  f"相關資料寫入 {os.path.join(OUT, 'related_data.jsonl')}", flush=True)
     # 去重：正規化後相同的網址只爬一次，但每一筆仍寫進紀錄
     seen, uniq, dups = set(), [], []
     for r in rows:
@@ -286,6 +323,13 @@ def main():
             rec, doc = crawl_video(r["no"], r["url"], jid, outdir)
         else:
             rec, doc = crawl_page(r["no"], r["url"], jid, outdir=outdir)
+        rec["source_kind"] = r.get("source_kind") or ("seed" if r.get("no", "").isdigit() else "curated")
+        rec["discovery_provider"] = r.get("provider", "")
+        rec["source_note"] = r.get("note", "")
+        if doc:
+            doc["source_kind"] = rec["source_kind"]
+            doc["discovery_provider"] = rec["discovery_provider"]
+            doc["source_note"] = rec["source_note"]
         print(f"     → {rec['crawl_status']} {rec.get('reason', '')[:80]}", flush=True)
         records.append(rec)
         if doc:
@@ -306,6 +350,13 @@ def main():
                 eid = f"ext_{ext_n:03d}"
                 print(f"  [ext] {eid} ← {doc['id']} {text[:20]} {u[:70]}", flush=True)
                 rec, d = crawl_page(f"E{ext_n}", u, eid, depth=1, parent=doc["id"])
+                rec["source_kind"] = "extension"
+                rec["discovery_provider"] = "in_page_link"
+                rec["source_note"] = text
+                if d:
+                    d["source_kind"] = "extension"
+                    d["discovery_provider"] = "in_page_link"
+                    d["source_note"] = text
                 records.append(rec)
                 if d:
                     docs.append(d)
